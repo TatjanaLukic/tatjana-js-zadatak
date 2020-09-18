@@ -1,0 +1,22 @@
+.country-filter-item {
+  background-color: white;
+  border: none;
+  color: #ee10ee;
+  text-align: center;
+  padding: 0.3rem;
+}
+@media screen and (min-width: 576px) {
+  .country-filter-item {
+    margin: 0.5rem;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.country-filter-item--checked {
+  color: white;
+  background-color: #8e0a8e;
+}
+
+/*# sourceMappingURL=countryFilterItem.css.map */

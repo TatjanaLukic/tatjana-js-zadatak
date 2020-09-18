@@ -10,23 +10,3 @@
     align-items: center;
   }
 }
-
-.country-filter-item {
-  background-color: white;
-  border: none;
-  color: $cf-main-color;
-  text-align: center;
-  padding: 0.3rem;
-
-  @media screen and (min-width: $smallSize) {
-    margin: 0.5rem;
-    font-weight: bold;
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.country-filter-item--checked {
-  color: $cf-active-color;
-  background-color: $cf-second-color;
-}
