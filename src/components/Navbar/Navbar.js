@@ -1,18 +1,26 @@
 import React from "react";
-import {NavLink} from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
+
+import './navbar.css'
 
 const Navbar = (props) => {
   return (
-    <ul>
+    <ul className="navbar-items">
       <li>
-        <NavLink to="/TopNewsPage">Top News</NavLink>
+        <NavLink to="/TopNewsPage" className="navbar-item">
+          Top News
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/CategoriesPage">Categories</NavLink>
+        <NavLink to="/CategoriesPage" className="navbar-item">
+          Categories
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/SearchPage">Search</NavLink>
+        <NavLink to="/SearchPage" className="navbar-item">
+          Search
+        </NavLink>
       </li>
     </ul>
   );

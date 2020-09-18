@@ -1,17 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Navbar from "../Navbar/Navbar";
 import CountryFilter from "../CountryFilter/CountryFilter";
+import "./header.css";
 
-const Header = (props) => {
+const Header = () => {
   return (
-      <header>
+      <header className="header">
           <Navbar />
           <CountryFilter />
       </header>
   )
 };
-
-Header.propTypes = {};
 
 export default Header;

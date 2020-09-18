@@ -1,0 +1,12 @@
+.country-filter {
+  display: flex;
+  box-sizing: content-box;
+}
+@media screen and (min-width: 992px) {
+  .country-filter {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=countryFilter.css.map */
