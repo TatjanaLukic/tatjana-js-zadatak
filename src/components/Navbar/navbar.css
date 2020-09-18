@@ -1,16 +1,43 @@
 .navbar-items {
   display: flex;
-  margin: 0;
   padding: 0;
   list-style: none;
-  box-sizing: border-box;
+  margin: 0 0.5rem;
+}
+@media screen and (min-width: 576px) {
+  .navbar-items {
+    margin: 0;
+  }
 }
 
 .navbar-item {
+  box-sizing: border-box;
   display: inline-block;
   padding: 0.5rem;
   font-weight: bold;
   text-decoration: none;
+  color: #ee10ee;
+}
+@media screen and (min-width: 576px) {
+  .navbar-item {
+    padding: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    border-right: 2px solid #8e0a8e;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar-item {
+    padding: 1.3rem;
+    font-size: 1.3rem;
+    width: 200px;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.navbar-item--checked {
+  color: white;
+  background-color: #8e0a8e;
 }
 
 /*# sourceMappingURL=navbar.css.map */

@@ -1,11 +1,12 @@
-@import "../../assets/varaiables";
+@import "../../assets/variables";
 
 .country-filter {
-    display: flex;
-    box-sizing: content-box;
-  
-    @media screen and (min-width: $largeSize) {
-        justify-content: center;
-        align-items: center;
-      }
+  display: flex;
+  box-sizing: content-box;
+  margin: 0.5rem 0.7rem;
+
+  @media screen and (min-width: $largeSize) {
+    justify-content: center;
+    align-items: center;
   }
+}

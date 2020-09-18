@@ -1,11 +1,17 @@
-@import "../../assets/varaiables";
+@import "../../assets/variables";
 
 .header {
   display: flex;
   flex-direction: column;
+  border: 2px solid $nav-second-color;
 
   @media screen and (min-width: $smallSize) {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: $largeSize) {
+    width: 80%;
+    margin: auto;
   }
 }

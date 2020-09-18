@@ -1,6 +1,7 @@
 .country-filter {
   display: flex;
   box-sizing: content-box;
+  margin: 0.5rem 0.7rem;
 }
 @media screen and (min-width: 992px) {
   .country-filter {
