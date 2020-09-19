@@ -11,9 +11,9 @@ const NewsPage = () => {
   return (
     <article className="news-page">
       <div className="news-page__title">{title}</div>
-      <div className="news-tile__img--wrapper">
+      <div className="news-page__img--wrapper">
         <img
-          className="news-tile__img"
+          className="news-page__img"
           src={urlToImage}
           alt="pictureOfNews"
         ></img>

@@ -10,11 +10,11 @@ exports[`<NewsPage /> spanshot matches 1`] = `
     PlayStation 5 launch confirmed: Sony's new consoles go on sale Nov. 12 starting at $400 - CNET
   </div>
   <div
-    className="news-tile__img--wrapper"
+    className="news-page__img--wrapper"
   >
     <img
       alt="pictureOfNews"
-      className="news-tile__img"
+      className="news-page__img"
       src="https://cnet1.cbsistatic.com/img/dUl2URQq7dAyQ0mGECp2k9M5MvQ=/1200x630/2020/09/17/25d17eb4-fa01-4a22-8923-1fa1e59e1eb4/ps5-screenshot-09-16-20.png"
     />
   </div>
