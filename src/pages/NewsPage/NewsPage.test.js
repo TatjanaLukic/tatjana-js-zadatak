@@ -29,6 +29,10 @@ describe("<NewsPage />", () => {
     expect(newsPage.find("article")).toHaveLength(1);
   });
 
+  it("should have link", () => {
+    expect(newsPage.find("Link")).toHaveLength(1);
+  });
+
   it("spanshot matches", () => {
     expect(newsPage).toMatchSnapshot();
   });

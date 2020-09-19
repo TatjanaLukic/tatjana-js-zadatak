@@ -32,5 +32,15 @@ Ready for the PlayStation 5? You can now preorder the new console "at select ret
     , 
     2020-09-17
   </p>
+  <Link
+    className="news-page__link"
+    to={
+      Object {
+        "pathname": "/TopNewsPage",
+      }
+    }
+  >
+    &lt; Back to list
+  </Link>
 </article>
 `;

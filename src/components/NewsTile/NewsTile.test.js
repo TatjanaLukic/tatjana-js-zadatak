@@ -20,8 +20,7 @@ describe("<NewsTile />", () => {
 
   it("should have 1 Link", () => {
     expect(newsTile.find("Link")).toHaveLength(1);
-  })
-
+  });
   it("spanshot matches", () => {
     expect(newsTile).toMatchSnapshot();
   });

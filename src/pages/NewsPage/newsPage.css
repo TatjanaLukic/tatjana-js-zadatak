@@ -66,4 +66,12 @@
   float: right;
 }
 
+.news-page__link {
+  display: block;
+  color: #8e0a8e;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
 /*# sourceMappingURL=newsPage.css.map */

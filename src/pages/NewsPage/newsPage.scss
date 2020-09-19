@@ -61,3 +61,11 @@
   font-style: italic;
   float: right;
 }
+
+.news-page__link{
+  display: block;
+  color: $nav-second-color;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top:2rem;
+}

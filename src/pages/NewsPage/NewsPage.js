@@ -1,6 +1,6 @@
 import React from "react";
 import "./newsPage.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const NewsPage = () => {
   const location = useLocation();
@@ -22,6 +22,15 @@ const NewsPage = () => {
       <p className="news-page__signuture">
         {author}, {date}
       </p>
+
+      <Link
+        className="news-page__link"
+        to={{
+          pathname: "/TopNewsPage",
+        }}
+      >
+        &lt; Back to list
+      </Link>
     </article>
   );
 };
