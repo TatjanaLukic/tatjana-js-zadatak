@@ -1,8 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
 import Navbar from "../Navbar/Navbar";
-import { manyNewsMock as mockData } from "../../__mocks__/manyNewsMock";
-import { NavLink } from "react-router-dom";
 
 describe("<Navbar />", () => {
   let navbar;
