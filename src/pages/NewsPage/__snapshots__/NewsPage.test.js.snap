@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewsPage /> spanshot matches 1`] = `
+<article
+  className="news-page"
+>
+  <div
+    className="news-page__title"
+  >
+    PlayStation 5 launch confirmed: Sony's new consoles go on sale Nov. 12 starting at $400 - CNET
+  </div>
+  <div
+    className="news-tile__img--wrapper"
+  >
+    <img
+      alt="pictureOfNews"
+      className="news-tile__img"
+      src="https://cnet1.cbsistatic.com/img/dUl2URQq7dAyQ0mGECp2k9M5MvQ=/1200x630/2020/09/17/25d17eb4-fa01-4a22-8923-1fa1e59e1eb4/ps5-screenshot-09-16-20.png"
+    />
+  </div>
+  <div
+    className="news-page__content"
+  >
+    The PlayStation 5 now has a price and release date. 
+Sony
+Ready for the PlayStation 5? You can now preorder the new console "at select retailers" for $500 (£450, AU$750) for the Blu-ray equipped ve… [+3327 chars]
+  </div>
+  <p
+    className="news-page__signuture"
+  >
+    Eli Blumenthal
+    , 
+    2020-09-17
+  </p>
+</article>
+`;
