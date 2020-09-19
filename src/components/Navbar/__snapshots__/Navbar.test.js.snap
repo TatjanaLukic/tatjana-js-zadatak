@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar /> spanshot matches 1`] = `
+<ul
+  className="navbar-items"
+>
+  <li>
+    <NavLink
+      activeClassName="navbar-item--checked"
+      className="navbar-item"
+      to="/TopNewsPage"
+    >
+      Top News
+    </NavLink>
+  </li>
+  <li>
+    <NavLink
+      activeClassName="navbar-item--checked"
+      className="navbar-item"
+      to="/CategoriesPage"
+    >
+      Categories
+    </NavLink>
+  </li>
+  <li>
+    <NavLink
+      activeClassName="navbar-item--checked"
+      className="navbar-item"
+      to="/SearchPage"
+    >
+      Search
+    </NavLink>
+  </li>
+</ul>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> spanshot matches 1`] = `
+<header
+  className="header"
+>
+  <Navbar />
+  <CountryFilter />
+</header>
+`;

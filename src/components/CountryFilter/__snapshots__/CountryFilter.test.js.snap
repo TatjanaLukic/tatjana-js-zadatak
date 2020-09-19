@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CountryFilter /> spanshot matches 1`] = `
+<div
+  className="country-filter"
+>
+  <CountryFilterItem
+    checked={true}
+    className="country-filter-item"
+    id="us"
+    labelName="US"
+    onChange={[Function]}
+    value="us"
+  />
+  <CountryFilterItem
+    checked={false}
+    className="country-filter-item"
+    id="gb"
+    labelName="GB"
+    onChange={[Function]}
+    value="gb"
+  />
+</div>
+`;

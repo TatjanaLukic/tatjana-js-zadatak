@@ -18,4 +18,8 @@ describe("<Header />", () => {
   it("should render 1 CountryFilter", () => {
     expect(header.find("Navbar")).toHaveLength(1);
   });
+
+  it("spanshot matches", () => {
+    expect(header).toMatchSnapshot();
+  });
 });

@@ -13,4 +13,8 @@ describe("<CountryFilter />", () => {
   it("should render 2 CountryFilterItem", () => {
     expect(countryFilter.find("CountryFilterItem")).toHaveLength(2);
   });
+
+  it("spanshot matches", () => {
+    expect(countryFilter).toMatchSnapshot();
+  });
 });
