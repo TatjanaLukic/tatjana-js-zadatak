@@ -7,6 +7,7 @@ exports[`<CountryFilter /> spanshot matches 1`] = `
   <CountryFilterItem
     checked={true}
     className="country-filter-item"
+    disabled={false}
     id="us"
     labelName="US"
     onChange={[Function]}
@@ -15,6 +16,7 @@ exports[`<CountryFilter /> spanshot matches 1`] = `
   <CountryFilterItem
     checked={false}
     className="country-filter-item"
+    disabled={false}
     id="gb"
     labelName="GB"
     onChange={[Function]}

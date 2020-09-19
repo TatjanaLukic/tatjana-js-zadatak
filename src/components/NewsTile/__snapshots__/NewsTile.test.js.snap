@@ -33,7 +33,7 @@ exports[`<NewsTile /> spanshot matches 1`] = `
         className="news-tile__link"
         to={
           Object {
-            "pathname": "/NewsPage",
+            "pathname": "/TopNewsPage/NewsPage",
             "state": Object {
               "author": "Eli Blumenthal",
               "content": "The PlayStation 5 now has a price and release date. 

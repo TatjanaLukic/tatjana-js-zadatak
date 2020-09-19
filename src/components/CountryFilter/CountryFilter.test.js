@@ -1,12 +1,20 @@
 import React from "react";
 import { shallow } from "enzyme";
-import CountryFilterItem from "./CountryFilterItem/CountryFilterItem";
+import routeData from "react-router";
 import CountryFilter from "./CountryFilter";
 
 describe("<CountryFilter />", () => {
   let countryFilter;
 
+  const mockLocation = {
+    pathname: "/TopNewsPage",
+    hash: "",
+    search: "",
+    state: {},
+  };
+
   beforeEach(() => {
+    jest.spyOn(routeData, "useLocation").mockReturnValue(mockLocation);
     countryFilter = shallow(<CountryFilter />);
   });
 
