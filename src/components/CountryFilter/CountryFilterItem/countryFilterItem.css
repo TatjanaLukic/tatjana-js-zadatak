@@ -4,6 +4,7 @@
   color: #ee10ee;
   text-align: center;
   padding: 0.3rem;
+  margin-right: 1.7rem;
 }
 @media screen and (min-width: 576px) {
   .country-filter-item {
@@ -17,6 +18,11 @@
 .country-filter-item--checked {
   color: white;
   background-color: #8e0a8e;
+}
+
+.country-filter-item--disabled {
+  pointer-events: none;
+  opacity: 0.3;
 }
 
 /*# sourceMappingURL=countryFilterItem.css.map */

@@ -28,7 +28,7 @@ const NewsTile = ({
           <Link
             className="news-tile__link"
             to={{
-              pathname: "/NewsPage",
+              pathname: "/TopNewsPage/NewsPage",
               state: { title, urlToImage, author, content, publishedAt },
             }}
           >

@@ -25,6 +25,9 @@ const App = () => {
       <Router>
         <Header />
         <Switch>
+          <Route path="/TopNewsPage/NewsPage">
+            <NewsPage />
+          </Route>
           <Route path="/TopNewsPage">
             <TopNewsPage />
           </Route>
@@ -33,9 +36,6 @@ const App = () => {
           </Route>
           <Route path="/SearchPage">
             <SearchPage />
-          </Route>
-          <Route path="/NewsPage">
-            <NewsPage />
           </Route>
           <Redirect to="/TopNewsPage">
             <TopNewsPage />

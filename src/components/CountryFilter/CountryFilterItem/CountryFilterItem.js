@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./countryFilterItem.css";
 
 const CountryFilterItem = ({
   id,
@@ -8,7 +9,10 @@ const CountryFilterItem = ({
   onChange,
   labelName,
   className,
+  disabled
 }) => {
+  let classes = checked ? `${className} ${className}--checked` : className;
+  classes = disabled ? `${classes} ${className}--disabled` : classes;
   return (
     <div>
       <input
@@ -17,11 +21,12 @@ const CountryFilterItem = ({
         value={value}
         onChange={onChange}
         checked={checked}
+        disabled={disabled}
         hidden
       />
       <label
         htmlFor={id}
-        className={checked ? `${className} ${className}--checked` : className}
+        className={classes}
       >
         {labelName}
       </label>

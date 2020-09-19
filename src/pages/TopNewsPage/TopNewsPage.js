@@ -4,6 +4,7 @@ import axiosInstance from "../../utils/axiosInstance";
 import "./topNewsPage.css";
 import NewsTile from "../../components/NewsTile/NewsTile";
 import CountryContext from "../../context/countryContext";
+import Loading from "../../components/Loading/Loading";
 
 const TopNewsPage = () => {
   const country = useContext(CountryContext);
@@ -42,7 +43,7 @@ const TopNewsPage = () => {
   });
 
   if (loading) {
-    return <h1>loading...</h1>;
+    return <Loading />
   }
 
   return (

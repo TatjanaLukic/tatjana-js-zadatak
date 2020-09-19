@@ -5,6 +5,7 @@
   color: $cf-main-color;
   text-align: center;
   padding: 0.3rem;
+  margin-right: 1.7rem;
 
   @media screen and (min-width: $smallSize) {
     margin: 0.5rem;
@@ -17,4 +18,9 @@
 .country-filter-item--checked {
   color: $cf-active-color;
   background-color: $cf-second-color;
+}
+
+.country-filter-item--disabled {
+  pointer-events: none;
+  opacity: 0.3;
 }
