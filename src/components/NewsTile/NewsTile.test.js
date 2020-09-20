@@ -21,6 +21,12 @@ describe("<NewsTile />", () => {
   it("should have 1 Link", () => {
     expect(newsTile.find("Link")).toHaveLength(1);
   });
+  it("should have 1 h5", () => {
+    expect(newsTile.find("h5")).toHaveLength(1);
+  });
+  it("should have 1 img", () => {
+    expect(newsTile.find("img")).toHaveLength(1);
+  });
   it("spanshot matches", () => {
     expect(newsTile).toMatchSnapshot();
   });

@@ -7,11 +7,11 @@ exports[`<NewsTile /> spanshot matches 1`] = `
   <div
     className="news-tile"
   >
-    <div
+    <h5
       className="news-tile__title"
     >
       PlayStation 5 launch confirmed: Sony's new consoles go on sale Nov. 12 starting at $400 - CNET
-    </div>
+    </h5>
     <div
       className="news-tile__img--wrapp"
     >
