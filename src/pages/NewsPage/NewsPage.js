@@ -10,7 +10,7 @@ const NewsPage = () => {
 
   return (
     <article className="news-page">
-      <div className="news-page__title">{title}</div>
+      <h1 className="news-page__title">{title}</h1>
       <div className="news-page__img--wrapper">
         <img
           className="news-page__img"
@@ -18,7 +18,7 @@ const NewsPage = () => {
           alt="pictureOfNews"
         ></img>
       </div>
-      <div className="news-page__content">{content}</div>
+      <section className="news-page__content">{content}</section>
       <p className="news-page__signuture">
         {author}, {date}
       </p>

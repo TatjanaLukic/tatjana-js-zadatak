@@ -1,6 +1,7 @@
 @import "../../assets/variables";
 .news-page {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   padding: 0.8rem;
 
   @media screen and (min-width: $smallSize) {

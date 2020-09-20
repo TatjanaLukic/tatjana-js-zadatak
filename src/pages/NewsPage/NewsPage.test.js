@@ -28,6 +28,16 @@ describe("<NewsPage />", () => {
   it("should have 1 article", () => {
     expect(newsPage.find("article")).toHaveLength(1);
   });
+  it("should have h1", () => {
+    expect(newsPage.find("h1")).toHaveLength(1);
+  });
+
+  it("should have section", () => {
+    expect(newsPage.find("section")).toHaveLength(1);
+  });
+  it("should have img", () => {
+    expect(newsPage.find("img")).toHaveLength(1);
+  });
 
   it("should have link", () => {
     expect(newsPage.find("Link")).toHaveLength(1);
