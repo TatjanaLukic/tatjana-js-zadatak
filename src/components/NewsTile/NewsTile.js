@@ -15,7 +15,7 @@ const NewsTile = ({
   return (
     <div className="news-tile--wrapper">
       <div className="news-tile">
-        <div className="news-tile__title">{title}</div>
+        <h5 className="news-tile__title">{title}</h5>
         <div className="news-tile__img--wrapp">
           <img
             className="news-tile__img"
