@@ -10,7 +10,7 @@
   overflow: hidden;
   margin-bottom: 2rem;
   border-radius: 3%;
-  border: 3px solid grey;
+  border: 3px solid #ddd;
   padding-left: 0.5rem;
 }
 @media screen and (min-width: 576px) {
@@ -19,6 +19,9 @@
     min-width: 380px;
     height: 320px;
   }
+}
+.news-tile--wrapper:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 .news-tile {
