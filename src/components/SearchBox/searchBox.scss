@@ -1,0 +1,30 @@
+@import "../../assets/variables";
+.searchBox {
+  display: block;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  height: 3.5rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color:rgba($news-tile-border,0.3);
+  border: none;
+  font-size: 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+ 
+
+  @media screen and (min-width: $smallSize) {
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    height: 4rem;
+  }
+
+  @media screen and (min-width: $largeSize) {
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+}

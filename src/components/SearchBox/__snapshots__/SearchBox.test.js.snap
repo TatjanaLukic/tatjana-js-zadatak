@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchBox /> spanshot matches 1`] = `
+<input
+  autoFocus={true}
+  className="searchBox"
+  onChange={[Function]}
+  placeholder="Search term..."
+  type="search"
+  value="Search term"
+/>
+`;

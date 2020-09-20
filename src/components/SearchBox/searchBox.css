@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+.searchBox {
+  display: block;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  height: 3.5rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: rgba(221, 221, 221, 0.3);
+  border: none;
+  font-size: 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 576px) {
+  .searchBox {
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    height: 4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .searchBox {
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+
+/*# sourceMappingURL=searchBox.css.map */

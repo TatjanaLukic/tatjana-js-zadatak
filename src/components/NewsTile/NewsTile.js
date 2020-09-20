@@ -11,6 +11,7 @@ const NewsTile = ({
   author,
   content,
   publishedAt,
+  parentPath
 }) => {
   return (
     <div className="news-tile--wrapper">
@@ -28,8 +29,8 @@ const NewsTile = ({
           <Link
             className="news-tile__link"
             to={{
-              pathname: "/TopNewsPage/NewsPage",
-              state: { title, urlToImage, author, content, publishedAt },
+              pathname: `${parentPath}/NewsPage`,
+              state: { title, urlToImage, author, content, publishedAt,parentPath },
             }}
           >
             More &gt;

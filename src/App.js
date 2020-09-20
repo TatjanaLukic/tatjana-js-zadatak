@@ -28,6 +28,12 @@ const App = () => {
           <Route path="/TopNewsPage/NewsPage">
             <NewsPage />
           </Route>
+          <Route path="/SearchPage/NewsPage">
+            <NewsPage />
+          </Route>
+          <Route path="/CategoriesPage/NewsPage">
+            <NewsPage />
+          </Route>
           <Route path="/TopNewsPage">
             <TopNewsPage />
           </Route>

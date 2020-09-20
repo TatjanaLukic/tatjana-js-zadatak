@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchPage /> spanshot matches 1`] = `
+<div
+  className="search-page"
+>
+  <h1
+    className="search-page__title"
+  >
+    Search top news from 
+    United States
+     by term
+  </h1>
+  <SearchBox
+    onChangeHandler={[Function]}
+    term=""
+  />
+  <div
+    className="search-page__tiles"
+  />
+</div>
+`;

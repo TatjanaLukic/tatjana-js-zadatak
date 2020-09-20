@@ -1,0 +1,42 @@
+@import "../../assets/variables";
+.search-page {
+  
+  box-sizing: border-box;
+  padding: 0.8rem;
+  font-family: 'Roboto', sans-serif;
+
+  @media screen and (min-width: $smallSize) {
+    padding: 1rem;
+  }
+
+  @media screen and (min-width: $largeSize) {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.search-page__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.8rem 0;
+
+  @media screen and (min-width: $smallSize) {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.7rem 0;
+  }
+}
+
+.search-page__tiles{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    
+    @media screen and (min-width: $smallSize) {
+        margin-top: 3rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
