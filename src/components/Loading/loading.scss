@@ -1,6 +1,7 @@
 @import "../../assets/variables";
 .loading {
   background-color: $nav-second-color;
+  opacity: 0.3;
   width: 120px;
   padding: 5rem;
   margin-top: 6rem;
