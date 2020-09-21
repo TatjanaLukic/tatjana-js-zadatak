@@ -19,8 +19,8 @@ const CategoriesPage = () => {
     <div className="categories-page">
       <h1 className="categories-page__title">Top 5 news by categories from {countryName}</h1>
       <div className="categories-page__blocks--wrapper">
-        {categories.map((categoryName) => {
-          return <CategoryBlock categoryName={categoryName} />;
+        {categories.map((categoryName,inx) => {
+          return <CategoryBlock key={inx} categoryName={categoryName} />;
         })}
       </div>
     </div>

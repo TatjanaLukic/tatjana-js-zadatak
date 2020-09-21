@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CategoriesPage /> spanshot matches 1`] = `
+<div
+  className="categories-page"
+>
+  <h1
+    className="categories-page__title"
+  >
+    Top 5 news by categories from 
+    United States
+  </h1>
+  <div
+    className="categories-page__blocks--wrapper"
+  >
+    <CategoryBlock
+      categoryName="entertainment"
+      key="0"
+    />
+    <CategoryBlock
+      categoryName="general"
+      key="1"
+    />
+    <CategoryBlock
+      categoryName="health"
+      key="2"
+    />
+    <CategoryBlock
+      categoryName="science"
+      key="3"
+    />
+    <CategoryBlock
+      categoryName="sport"
+      key="4"
+    />
+    <CategoryBlock
+      categoryName="technology"
+      key="5"
+    />
+  </div>
+</div>
+`;
