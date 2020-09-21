@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Slide /> spanshot matches 1`] = `
+<div
+  className="slide-show"
+>
+  <h3
+    className="slide__title"
+  >
+    <Link
+      className="slide__link"
+      to={
+        Object {
+          "pathname": "/categoriesPage/NewsPage",
+          "state": Object {
+            "author": "Eli Blumenthal",
+            "content": "The PlayStation 5 now has a price and release date. 
+Sony
+Ready for the PlayStation 5? You can now preorder the new console \\"at select retailers\\" for $500 (£450, AU$750) for the Blu-ray equipped ve… [+3327 chars]",
+            "parentPath": "/categoriesPage",
+            "publishedAt": "2020-09-17T17:02:00Z",
+            "title": "PlayStation 5 launch confirmed: Sony's new consoles go on sale Nov. 12 starting at $400 - CNET",
+            "urlToImage": "https://cnet1.cbsistatic.com/img/dUl2URQq7dAyQ0mGECp2k9M5MvQ=/1200x630/2020/09/17/25d17eb4-fa01-4a22-8923-1fa1e59e1eb4/ps5-screenshot-09-16-20.png",
+          },
+        }
+      }
+    >
+      PlayStation 5 launch confirmed: Sony's new consoles go on sale Nov. 12 starting at $400 - CNET
+    </Link>
+  </h3>
+  <img
+    alt="pictureOfNews"
+    className="slide__image"
+    src="https://cnet1.cbsistatic.com/img/dUl2URQq7dAyQ0mGECp2k9M5MvQ=/1200x630/2020/09/17/25d17eb4-fa01-4a22-8923-1fa1e59e1eb4/ps5-screenshot-09-16-20.png"
+  />
+  <p
+    className="slide__desc"
+  >
+    We finally know how much PS5 will cost.
+  </p>
+</div>
+`;
