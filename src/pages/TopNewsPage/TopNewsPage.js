@@ -38,6 +38,7 @@ const TopNewsPage = () => {
         author={data.author}
         content={data.content}
         publishedAt={data.publishedAt}
+        parentPath="/TopNewsPage"
       />
     );
   });

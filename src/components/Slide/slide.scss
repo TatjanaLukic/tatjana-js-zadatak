@@ -1,12 +1,18 @@
 @import "../../assets/variables";
 .slide-show {
   display: block;
+  opacity:1;
+  transition: opacity 500ms 100ms linear;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  position:static;
 }
 
 .slide-hide {
-  display: none;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important; 
+  opacity: 0;
 }
 
 .slide__title {
@@ -52,6 +58,7 @@
 }
 
 .slide__desc {
+  padding: 0;
   padding-right: 0.5rem;
   line-height: 1.1;
   font-size: 90%;
