@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import "./slide.css";
 
 const Slide = ({
-  key,
   isCurrent,
   title,
   urlToImage,
@@ -42,7 +41,6 @@ const Slide = ({
 };
 
 Slide.propTypes = {
-  key: PropTypes.number.isRequired,
   isCurrent: PropTypes.bool.isRequired,
   urlToImage: PropTypes.string,
   description: PropTypes.string,
