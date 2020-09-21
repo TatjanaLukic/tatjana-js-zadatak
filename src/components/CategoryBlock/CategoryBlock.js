@@ -10,7 +10,7 @@ import "./categoryBlock.css";
 
 const CategoryBlock = ({ categoryName }) => {
   const [active, setActive] = useState(true);
-  const [currentSlide, setCurrentSlide] = useState(3);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const onClickRight = () => {
     if (currentSlide < 4) {
