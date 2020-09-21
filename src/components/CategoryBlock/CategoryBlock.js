@@ -1,16 +1,37 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import axiosInstance from "../../utils/axiosInstance";
+import CountryContext from "../../context/countryContext";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { manyNewsMock } from "../../__mocks__/manyNewsMock";
 import Slide from "../Slide/Slide";
 import { ReactComponent as IconExpand } from "../../assets/images/expand.svg";
 import { ReactComponent as IconCollapse } from "../../assets/images/collapse.svg";
+import Loading from "../../components/Loading/Loading";
 
 import "./categoryBlock.css";
 
 const CategoryBlock = ({ categoryName }) => {
+  const country = useContext(CountryContext);
+
   const [active, setActive] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    axiosInstance
+      .get(
+        `/top-headlines?country=${country.country}&category=${categoryName}&pageSize=5`
+      )
+      .then((response) => {
+        const data = response.data;
+        setNews(data.articles);
+      })
+      .catch((error) => console.log(error))
+      .finally(() => {
+        setLoading(false);
+      });
+  });
 
   const onClickRight = () => {
     if (currentSlide < 4) {
@@ -28,7 +49,7 @@ const CategoryBlock = ({ categoryName }) => {
     setActive(!active);
   };
 
-  const news = manyNewsMock.map((data, inx) => {
+  const newsSlides = news.map((data, inx) => {
     return (
       <Slide
         key={inx}
@@ -43,6 +64,11 @@ const CategoryBlock = ({ categoryName }) => {
       />
     );
   });
+
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <div className="category-block">
       <Link
@@ -74,11 +100,11 @@ const CategoryBlock = ({ categoryName }) => {
 
       <div className={active ? "category-block--show" : "category-block--hide"}>
         <div className="category-block__slides--wrapper">
-          <div className="category-block__nav" onClick={onClickRight}>
+          <div className="category-block__nav" onClick={onClickLeft}>
             &lt;
           </div>
-          <div className="category-block__slides">{news}</div>
-          <div className="category-block__nav" onClick={onClickLeft}>
+          <div className="category-block__slides">{newsSlides}</div>
+          <div className="category-block__nav" onClick={onClickRight}>
             &gt;
           </div>
         </div>

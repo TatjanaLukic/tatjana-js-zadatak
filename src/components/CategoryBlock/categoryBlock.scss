@@ -35,10 +35,11 @@
   width: 100%;
   background-color:$slide-background-color;
   padding: 0 0.3rem;
+  min-height: 300px;
 
   @media screen and (min-width: $largeSize) {
     margin: auto;
-    width: 90%;
+    width: 85%;
     min-height: 360px;
   }
 }
