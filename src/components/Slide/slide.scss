@@ -1,0 +1,75 @@
+@import "../../assets/variables";
+.slide-show {
+  display: block;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.slide-hide {
+  display: none;
+}
+
+.slide__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+
+  &:hover {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (min-width: $smallSize) {
+    font-size: 1.4rem;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 0.3;
+
+    &:hover {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.slide__link {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.slide__image {
+  max-width: 250px;
+  height: auto;
+  @media screen and (min-width: $smallSize) {
+    max-width: 400px;
+  }
+
+  @media screen and (min-width: $largeSize) {
+    max-width: 450px;
+  }
+}
+
+.slide__desc {
+  padding-right: 0.5rem;
+  line-height: 1.1;
+  font-size: 90%;
+  max-height: 100px;
+  overflow: auto;
+  margin:0 0 1rem 0;
+
+  @media screen and (min-width: $largeSize) {
+    padding-right: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    height: 70px;
+    margin: 0;
+
+  }
+
+  @media screen and (min-width: $extraSize) {
+    height: 60px;
+
+  }
+}
