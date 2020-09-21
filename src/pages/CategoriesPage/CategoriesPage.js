@@ -1,16 +1,30 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useContext } from "react";
+import CountryContext from "../../context/countryContext";
 
-const CategoriesPage = props => {
-    return (
-        <div>
-            CategoriesPage
-        </div>
-    )
-}
+import CategoryBlock from "../../components/CategoryBlock/CategoryBlock";
+import "./categoriesPage.css";
+const CategoriesPage = () => {
+  const country = useContext(CountryContext);
+  const countryName =
+    country.country === "us" ? "United States" : "Great Britain";
+  const categories = [
+    "entertainment",
+    "general",
+    "health",
+    "science",
+    "sport",
+    "technology",
+  ];
+  return (
+    <div className="categories-page">
+      <h1 className="categories-page__title">Top 5 news by categories from {countryName}</h1>
+      <div className="categories-page__blocks--wrapper">
+        {categories.map((categoryName) => {
+          return <CategoryBlock categoryName={categoryName} />;
+        })}
+      </div>
+    </div>
+  );
+};
 
-CategoriesPage.propTypes = {
-
-}
-
-export default CategoriesPage
+export default CategoriesPage;

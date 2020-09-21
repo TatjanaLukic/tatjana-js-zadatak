@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import PropTypes from "prop-types";
 import axiosInstance from "../../utils/axiosInstance";
 import "./topNewsPage.css";
 import NewsTile from "../../components/NewsTile/NewsTile";
@@ -53,12 +52,6 @@ const TopNewsPage = () => {
       <div className="top-news-page__tiles">{newsTiles}</div>
     </div>
   );
-};
-
-TopNewsPage.propTypes = {
-  country: PropTypes.shape({
-    country: PropTypes.string,
-  }),
 };
 
 export default TopNewsPage;

@@ -4,7 +4,7 @@ import { useLocation, Link } from "react-router-dom";
 
 const NewsPage = () => {
   const location = useLocation();
-  const { title, urlToImage, author, content, publishedAt,parentPath } = location.state;
+  const { title, urlToImage, author, content, publishedAt, parentPath } = location.state;
 
   const date = publishedAt.substring(0, 10);
 

@@ -1,0 +1,39 @@
+@import "../../assets/variables";
+.categories-page{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.8rem;
+
+  
+    @media screen and (min-width: $smallSize) {
+      padding: 1rem;
+    }
+  
+    @media screen and (min-width: $largeSize) {
+      width: 75%;
+      margin: auto;
+    }
+  }
+
+  .categories-page__title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0 0.3rem;
+    margin: 0.8rem 0;
+  
+    @media screen and (min-width: $smallSize) {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 0 2rem;
+      margin: 1rem 0;
+    }
+  }
+
+  .categories-page__blocks--wrapper {
+      border: 2px solid $categories-border;
+      border-radius: 3%;
+  }
+  
+

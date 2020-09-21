@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+.categories-page {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  padding: 0.8rem;
+}
+@media screen and (min-width: 576px) {
+  .categories-page {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .categories-page {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+.categories-page__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0 0.3rem;
+  margin: 0.8rem 0;
+}
+@media screen and (min-width: 576px) {
+  .categories-page__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    margin: 1rem 0;
+  }
+}
+
+.categories-page__blocks--wrapper {
+  border: 2px solid #ddd;
+  border-radius: 3%;
+}
+
+/*# sourceMappingURL=categoriesPage.css.map */
