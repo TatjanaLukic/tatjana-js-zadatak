@@ -4,8 +4,9 @@ Application for displaying top news
 
 ## Table of Contents
 
-  - [Functionalities](#Functionalities)
-  - [Technologies used](#browser-support)
+  - [Functionalities](#functionalities)
+  - [Technologies used](#technologies-used)
+  - [Project structure](#project-structure)
   - [Starting Storybook ](#starting-storybook )
   - [Visual regression testing with Storybook](#visual-regression-testing-with-storybook)
   - [Create React App](#create-react-app)
@@ -30,14 +31,22 @@ It can be used for various size devices as it is responsive.
 
 Application is implemented using following technologies:
 
-    React(https://reactjs.org/)
-    Sass(https://sass-lang.com/install)
-    Context as centralized state management(https://reactjs.org/docs/context.html)
-    Unit testing
-    Storybook(https://storybook.js.org/)
-    Visual regression tests with Storybook (https://storybook.js.org/docs/react/workflows/visual-testing)
+    [React](https://reactjs.org/)
+    [Sass](https://sass-lang.com/install)
+    [Context] as centralized state management(https://reactjs.org/docs/context.html)
+    Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [and Enzyme]
+    [Storybook](https://storybook.js.org/)
+    [Visual regression tests with Storybook] (https://storybook.js.org/docs/react/workflows/visual-testing)
 
-## Starting Storybook 
+# Project structure
+
+    Project is structured in a way that each component/page has its own folder with implementation, styling, tests, stories,
+    and snapshots.
+    In stories folder are image snapshots located in __image_snapshots__ folder
+    Folder __tests__ have only test for utility functions.
+    Mockes are in __mocks__ folder.
+
+# Starting Storybook 
    
    To start storybook use following command:
 
