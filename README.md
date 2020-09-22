@@ -32,10 +32,15 @@ It can be used for various size devices as it is responsive.
 Application is implemented using following technologies:
 
 [React](https://reactjs.org/)
+
 [Sass](https://sass-lang.com/install)
-[Context] as centralized state management(https://reactjs.org/docs/context.html)
-Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [and Enzyme]
+
+[Context](https://reactjs.org/docs/context.html) as centralized state management
+
+Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [Enzyme](https://enzymejs.github.io/enzyme/)
+
 [Storybook](https://storybook.js.org/)
+
 [Visual regression tests with Storybook](https://storybook.js.org/docs/react/workflows/visual-testing)
 
 # Project structure
