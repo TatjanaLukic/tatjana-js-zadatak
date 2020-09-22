@@ -21,8 +21,8 @@ const SearchPage = () => {
         const data = response.data;
         setNews(data.articles);
       })
-      .catch((error) => console.log(error))
-  }, [term]);
+      .catch((error) => console.log(error));
+  }, [term, country.country]);
 
   const onChangeHandler = (event) => {
     setTerm(event.target.value);
