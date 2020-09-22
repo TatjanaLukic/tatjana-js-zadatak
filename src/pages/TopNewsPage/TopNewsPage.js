@@ -40,7 +40,7 @@ const TopNewsPage = () => {
       .finally(() => {
         setLoading(false);
       });
-  }, [country.country]);
+  }, [country.country, categoryName]);
 
   const newsTiles = news.map((data, inx) => {
     return (

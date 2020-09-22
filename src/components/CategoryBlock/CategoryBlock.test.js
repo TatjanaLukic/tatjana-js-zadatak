@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useState as useStateMock } from "react";
 import { shallow } from "enzyme";
 import CategoryBlock from "./CategoryBlock";
+
+const mockUseContext = jest.fn().mockImplementation(() => ({
+  country: "us",
+  selectCountry: () => {},
+}));
+
+React.useContext = mockUseContext;
 
 describe("<CategoryBlock />", () => {
   let categoryBlock;
   let data = {
-    categoryName:"entertainment"
+    categoryName: "entertainment",
   };
 
   beforeEach(() => {
     categoryBlock = shallow(<CategoryBlock {...data} />);
   });
-
-  it("should have 1 Link", () => {
-    expect(categoryBlock.find("Link")).toHaveLength(1);
-  });
-  it("should have 5 Slide", () => {
-    expect(categoryBlock.find("Slide")).toHaveLength(5);
+  it("should have loading", () => {
+    expect(categoryBlock.find("Loading")).toHaveLength(1);
   });
   it("spanshot matches", () => {
     expect(categoryBlock).toMatchSnapshot();

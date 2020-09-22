@@ -22,13 +22,11 @@ describe("<TopNewsPage />", () => {
     const topNewsData = shallow(<TopNewsPage />);
   });
 
-  it("should have loading", async () => {
-    const topNewsData = shallow(<TopNewsPage />);
+  it("should have loading", () => {
     expect(topNewsData.find("Loading")).toHaveLength(1);
   });
 
   it("spanshot matches", () => {
-    const topNewsData = shallow(<TopNewsPage />);
     expect(topNewsData).toMatchSnapshot();
   });
 });
