@@ -63,22 +63,16 @@
   padding-right: 0.5rem;
   line-height: 1.1;
   font-size: 90%;
-  max-height: 100px;
+  min-height: 2rem;
   overflow: auto;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
 }
 @media screen and (min-width: 992px) {
   .slide__desc {
     padding-right: 0.5rem;
     font-size: 1rem;
     line-height: 1.6;
-    height: 70px;
     margin: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .slide__desc {
-    height: 60px;
   }
 }
 
