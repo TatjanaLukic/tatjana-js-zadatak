@@ -1,3 +1,65 @@
+# Top news app
+
+Application for displaying top news
+
+## Table of Contents
+
+  - [Functionalities](#Functionalities)
+  - [Technologies used](#browser-support)
+  - [Starting Storybook ](#starting-storybook )
+  - [Visual regression testing with Storybook](#visual-regression-testing-with-storybook)
+  - [Create React App](#create-react-app)
+
+# Functionalities
+
+App displays the latest top news from United States and Great Britain. User can read news intro all whole article.
+User can also preview 5 top news from 6 categories (Entertainment, General, Health, Science, Sport, Technology) or
+read all news from chosen category.
+If user is intrested in a specific topic application gives option to search all news by given term.
+
+App has following pages:
+
+Top News -to preview all latest news for chosen country
+Categories - for 6 categories top 5 news can be previewed. Categories can be expanded or collapsed. By clicking on 
+             category name it displays all news for given category.
+Search -enables search of news for selected country
+
+It can be used for various size devices as it is responsive.
+
+# Technologies used
+
+Application is implemented using following technologies:
+
+    React(https://reactjs.org/)
+    Sass(https://sass-lang.com/install)
+    Context as centralized state management(https://reactjs.org/docs/context.html)
+    Unit testing
+    Storybook(https://storybook.js.org/)
+    Visual regression tests with Storybook (https://storybook.js.org/docs/react/workflows/visual-testing)
+
+## Starting Storybook 
+   
+   To start storybook use following command:
+
+### `npm test storybook`
+
+    On offial site are more details how else storybook can be started. Please check: https://storybook.js.org/
+
+## Visual regression testing with Storybook
+
+    To start visual regression testing you first have to have Storybook running, and then use following command 
+    to start visual regression tests only:
+
+### `npm test storybook.test.js`
+
+    If some of component have changed you will be notifed and can preview differences. If that is wanted change just 
+    hit u for update. If not, then you will have to check what needs to be fixed...:)
+
+## Create React App
+
+Following are instruction how to build and run application. As well how to start tests and information related implementing
+React app.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
