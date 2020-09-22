@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import axiosInstance from "../../utils/axiosInstance";
 import "./topNewsPage.css";
 import NewsTile from "../../components/NewsTile/NewsTile";
@@ -14,9 +15,24 @@ const TopNewsPage = () => {
   const countryName =
     country.country === "us" ? "United States" : "Great Britain";
 
+  let categoryName = "";
+  const location = useLocation();
+  if (location.state) {
+    categoryName = location.state.categoryName
+      ? location.state.categoryName
+      : undefined;
+  }
+
+  const categoryNameUrlParam = categoryName ? `&category=${categoryName}` : "";
+
+  const title = categoryName
+    ? `Top ${categoryName} news from ${countryName}`
+    : `Top news from ${countryName}`;
+
   useEffect(() => {
+    console.log("useEffect called");
     axiosInstance
-      .get(`/top-headlines?country=${country.country}`)
+      .get(`/top-headlines?country=${country.country}&{categoryNameUrlParam}`)
       .then((response) => {
         const data = response.data;
         setNews(data.articles);
@@ -37,18 +53,19 @@ const TopNewsPage = () => {
         author={data.author}
         content={data.content}
         publishedAt={data.publishedAt}
-        parentPath="/TopNewsPage"
+        parentPath={categoryName ? "/CategoriesPage" : "/TopNewsPage"}
+        categoryName={categoryName}
       />
     );
   });
 
   if (loading) {
-    return <Loading />
+    return <Loading />;
   }
 
   return (
     <div className="top-news-page">
-      <h1 className="top-news-page__title">Top news from {countryName}</h1>
+      <h1 className="top-news-page__title">{title}</h1>
       <div className="top-news-page__tiles">{newsTiles}</div>
     </div>
   );

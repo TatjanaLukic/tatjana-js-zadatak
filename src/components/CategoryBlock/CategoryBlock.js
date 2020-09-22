@@ -23,15 +23,12 @@ const CategoryBlock = ({ categoryName }) => {
       .get(
         `/top-headlines?country=${country.country}&category=${categoryName}&pageSize=5`
       )
-      .then((response) => {
-        const data = response.data;
-        setNews(data.articles);
-      })
+      .then((response) => setNews(response.data.articles))
       .catch((error) => console.log(error))
       .finally(() => {
         setLoading(false);
       });
-  });
+  }, [country.country]);
 
   const onClickRight = () => {
     if (currentSlide < 4) {
@@ -74,7 +71,8 @@ const CategoryBlock = ({ categoryName }) => {
       <Link
         className="category-block__link"
         to={{
-          pathname: `/NewsPage`,
+          pathname: `/CategoriesPage/TopNewsPage`,
+          state: { categoryName },
         }}
       >
         {categoryName}

@@ -4,9 +4,17 @@ import { useLocation, Link } from "react-router-dom";
 
 const NewsPage = () => {
   const location = useLocation();
-  const { title, urlToImage, author, content, publishedAt, parentPath } = location.state;
+  const {
+    title,
+    urlToImage,
+    author,
+    content,
+    publishedAt,
+    parentPath,
+    categoryName,
+  } = location.state;
 
-  const date = publishedAt.substring(0, 10);
+  const date = publishedAt ? publishedAt.substring(0, 10) : "";
 
   return (
     <article className="news-page">
@@ -26,7 +34,8 @@ const NewsPage = () => {
       <Link
         className="news-page__link"
         to={{
-          pathname: {parentPath} ,
+          pathname: parentPath,
+          state: { categoryName },
         }}
       >
         &lt; Back to list

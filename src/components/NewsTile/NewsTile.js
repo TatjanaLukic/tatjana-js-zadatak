@@ -11,7 +11,8 @@ const NewsTile = ({
   author,
   content,
   publishedAt,
-  parentPath
+  parentPath,
+  categoryName,
 }) => {
   return (
     <div className="news-tile--wrapper">
@@ -30,7 +31,15 @@ const NewsTile = ({
             className="news-tile__link"
             to={{
               pathname: `${parentPath}/NewsPage`,
-              state: { title, urlToImage, author, content, publishedAt,parentPath },
+              state: {
+                title,
+                urlToImage,
+                author,
+                content,
+                publishedAt,
+                parentPath: `${parentPath}/TopNewsPage`,
+                categoryName,
+              },
             }}
           >
             More &gt;
@@ -42,12 +51,12 @@ const NewsTile = ({
 };
 
 NewsTile.propTypes = {
-    title:PropTypes.string,
-    urlToImage:PropTypes.string,
-    description:PropTypes.string,
-    author:PropTypes.string,
-    content:PropTypes.string,
-    publishedAt:PropTypes.string,
+  title: PropTypes.string,
+  urlToImage: PropTypes.string,
+  description: PropTypes.string,
+  author: PropTypes.string,
+  content: PropTypes.string,
+  publishedAt: PropTypes.string,
 };
 
 export default NewsTile;

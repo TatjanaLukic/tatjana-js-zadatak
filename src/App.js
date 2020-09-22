@@ -34,6 +34,9 @@ const App = () => {
           <Route path="/CategoriesPage/NewsPage">
             <NewsPage />
           </Route>
+          <Route path="/CategoriesPage/TopNewsPage">
+            <TopNewsPage />
+          </Route>
           <Route path="/TopNewsPage">
             <TopNewsPage />
           </Route>
