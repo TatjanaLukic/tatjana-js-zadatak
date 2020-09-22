@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import CountryContext from "../../context/countryContext";
-
 import CategoryBlock from "../../components/CategoryBlock/CategoryBlock";
 import "./categoriesPage.css";
 
