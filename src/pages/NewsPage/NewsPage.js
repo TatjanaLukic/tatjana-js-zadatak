@@ -19,13 +19,11 @@ const NewsPage = () => {
   return (
     <article className="news-page">
       <h1 className="news-page__title">{title}</h1>
-      <div className="news-page__img--wrapper">
         <img
           className="news-page__img"
           src={urlToImage}
           alt="pictureOfNews"
         ></img>
-      </div>
       <section className="news-page__content">{content}</section>
       <p className="news-page__signuture">
         {author}, {date}
