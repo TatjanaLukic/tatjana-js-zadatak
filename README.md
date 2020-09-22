@@ -31,38 +31,38 @@ It can be used for various size devices as it is responsive.
 
 Application is implemented using following technologies:
 
-    [React](https://reactjs.org/)
-    [Sass](https://sass-lang.com/install)
-    [Context] as centralized state management(https://reactjs.org/docs/context.html)
-    Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [and Enzyme]
-    [Storybook](https://storybook.js.org/)
-    [Visual regression tests with Storybook] (https://storybook.js.org/docs/react/workflows/visual-testing)
+[React](https://reactjs.org/)
+[Sass](https://sass-lang.com/install)
+[Context] as centralized state management(https://reactjs.org/docs/context.html)
+Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [and Enzyme]
+[Storybook](https://storybook.js.org/)
+[Visual regression tests with Storybook](https://storybook.js.org/docs/react/workflows/visual-testing)
 
 # Project structure
 
-    Project is structured in a way that each component/page has its own folder with implementation, styling, tests, stories,
-    and snapshots.
-    In stories folder are image snapshots located in __image_snapshots__ folder
-    Folder __tests__ have only test for utility functions.
-    Mockes are in __mocks__ folder.
+Project is structured in a way that each component/page has its own folder with implementation, styling, tests, stories,
+and snapshots.
+In stories folder are image snapshots located in __image_snapshots__ folder
+Folder __tests__ have only test for utility functions.
+Mockes are in __mocks__ folder.
 
 # Starting Storybook 
    
-   To start storybook use following command:
+To start storybook use following command:
 
 ### `npm test storybook`
 
-    On offial site are more details how else storybook can be started. Please check: https://storybook.js.org/
+On offial site are more details how else storybook can be started. Please check: https://storybook.js.org/
 
 ## Visual regression testing with Storybook
 
-    To start visual regression testing you first have to have Storybook running, and then use following command 
-    to start visual regression tests only:
+To start visual regression testing you first have to have Storybook running, and then use following command 
+to start visual regression tests only:
 
 ### `npm test storybook.test.js`
 
-    If some of component have changed you will be notifed and can preview differences. If that is wanted change just 
-    hit u for update. If not, then you will have to check what needs to be fixed...:)
+If some of component have changed you will be notifed and can preview differences. If that is wanted change just 
+hit u for update. If not, then you will have to check what needs to be fixed...:)
 
 ## Create React App
 
