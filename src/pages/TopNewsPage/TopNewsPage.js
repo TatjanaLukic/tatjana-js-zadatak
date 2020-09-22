@@ -1,10 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import axiosInstance from "../../utils/axiosInstance";
-import "./topNewsPage.css";
+import { getUrl } from "../../utils/helpers";
 import NewsTile from "../../components/NewsTile/NewsTile";
 import CountryContext from "../../context/countryContext";
 import Loading from "../../components/Loading/Loading";
+
+import "./topNewsPage.css";
 
 const TopNewsPage = () => {
   const country = useContext(CountryContext);
@@ -20,19 +22,16 @@ const TopNewsPage = () => {
   if (location.state) {
     categoryName = location.state.categoryName
       ? location.state.categoryName
-      : undefined;
+      : "";
   }
-
-  const categoryNameUrlParam = categoryName ? `&category=${categoryName}` : "";
 
   const title = categoryName
     ? `Top ${categoryName} news from ${countryName}`
     : `Top news from ${countryName}`;
 
   useEffect(() => {
-    console.log("useEffect called");
     axiosInstance
-      .get(`/top-headlines?country=${country.country}&{categoryNameUrlParam}`)
+      .get(getUrl(country.country, categoryName, 20))
       .then((response) => {
         const data = response.data;
         setNews(data.articles);

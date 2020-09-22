@@ -3,6 +3,7 @@ import axiosInstance from "../../utils/axiosInstance";
 import CountryContext from "../../context/countryContext";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import {getUrl} from "../../utils/helpers";
 import Slide from "../Slide/Slide";
 import { ReactComponent as IconExpand } from "../../assets/images/expand.svg";
 import { ReactComponent as IconCollapse } from "../../assets/images/collapse.svg";
@@ -17,12 +18,11 @@ const CategoryBlock = ({ categoryName }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
-
+ 
+  
   useEffect(() => {
     axiosInstance
-      .get(
-        `/top-headlines?country=${country.country}&category=${categoryName}&pageSize=5`
-      )
+      .get(getUrl(country.country, categoryName, 5))
       .then((response) => setNews(response.data.articles))
       .catch((error) => console.log(error))
       .finally(() => {
