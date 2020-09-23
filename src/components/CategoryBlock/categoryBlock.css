@@ -77,6 +77,10 @@
   }
 }
 
+.cb__nav--disable {
+  opacity: 0.3;
+}
+
 .category-block--hide {
   display: none;
 }

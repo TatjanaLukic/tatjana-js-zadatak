@@ -33,7 +33,7 @@
 .category-block__slides {
   margin: auto;
   width: 100%;
-  background-color:$slide-background-color;
+  background-color: $slide-background-color;
   padding: 0 0.3rem;
   min-height: 260px;
 
@@ -68,6 +68,10 @@
     font-size: bold;
     font-size: 4rem;
   }
+}
+
+.cb__nav--disable {
+  opacity: 0.3;
 }
 
 .category-block--hide {

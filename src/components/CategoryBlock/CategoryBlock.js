@@ -18,10 +18,11 @@ const CategoryBlock = ({ categoryName }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
+  const maxSlides = 5;
 
   useEffect(() => {
     axiosInstance
-      .get(getUrl(country.country, categoryName, 5))
+      .get(getUrl(country.country, categoryName, maxSlides))
       .then((response) => setNews(response.data.articles))
       .catch((error) => console.log(error))
       .finally(() => {
@@ -97,11 +98,11 @@ const CategoryBlock = ({ categoryName }) => {
 
       <div className={active ? "category-block--show" : "category-block--hide"}>
         <div className="category-block__slides--wrapper">
-          <div className="category-block__nav" onClick={onClickLeft}>
+          <div className={currentSlide==(0)?"category-block__nav cb__nav--disable":"category-block__nav"} onClick={onClickLeft}>
             &lt;
           </div>
           <div className="category-block__slides">{newsSlides}</div>
-          <div className="category-block__nav" onClick={onClickRight}>
+          <div className={currentSlide==(maxSlides-1)?"category-block__nav cb__nav--disable":"category-block__nav"} onClick={onClickRight}>
             &gt;
           </div>
         </div>
