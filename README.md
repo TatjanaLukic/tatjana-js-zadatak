@@ -19,14 +19,14 @@ User can also preview 5 top news from 6 categories (Entertainment, General, Heal
 preview and read all news from chosen category.
 If user is intrested in a specific topic application gives option to search all news from selected country by given term.
 
-App has following pages:
+App has following sections:
 
-Top News -to preview all latest news for chosen country
-Categories - for 6 categories top 5 news can be previewed. Categories can be expanded or collapsed. By clicking on 
+ __Top News__ - to preview all latest news for chosen country.
+ __Categories__ - for 6 categories top 5 news can be previewed. Categories can be expanded or collapsed. By clicking on 
              category name it displays all news for given category.
-Search -enables search of news for selected country
+ __Search__ - enables search of news for selected country/
 
-It can be used for various size devices as it is responsive.
+It can be used for various size devices as it is __responsive__.
 
 # Technologies used
 
@@ -47,9 +47,9 @@ Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [Enzyme](
 # Project structure
 
 Each component/page has its own folder with implementation, styling, tests, stories and snapshots.
-Sass varaiables for sizes and colors are in __/assets/_variables__ file.
-In stories folder are image snapshots located in ___image_snapshots__ folder
-Folder ____tests__ have only test for utility functions.
+Sass varaiables for sizes and colors are in /assets/_variables file.
+In stories folder are image snapshots located in ___image_snapshots___ folder
+Folder ____tests____ have only test for utility functions.
 Mockes are in __mocks__ folder.
 
 # Starting Storybook 
