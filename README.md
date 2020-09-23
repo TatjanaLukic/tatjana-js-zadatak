@@ -40,9 +40,9 @@ Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [Enzyme](
 
 # Project structure
 
-Each component/page has its own folder with implementation, styling, tests, stories and snapshots.<br />
+__Each component/page has its own folder with implementation, styling, tests, stories and snapshots__.<br />
 Sass varaiables for sizes and colors are in __/assets/\_variables__ file.<br />
-__storybook.test.js__ used for visual regression testing - creating images snapshot is in stroies folder, and image snapshots are located in stories/\_\_image_snapshots\_\_ folder.<br />
+__storybook.test.js__ used for visual regression testing - creating images snapshot is in stories folder, and image snapshots are located in stories/\_\_image_snapshots\_\_ folder.<br />
 Folder \_\_tests\_\_ have only test for utility functions.<br />
 Mockes are in \_\_mocks\_\_folder.<br />
 
