@@ -10,9 +10,10 @@ const CountryFilter = () => {
   const country = useContext(CountryContext);
   const [disabled, setDisabled] = useState(false);
 
+  const regex = RegExp("/NewsPage*");
   const location = useLocation();
   useEffect(() => {
-    if (location.pathname === "/TopNewsPage/NewsPage") {
+    if (regex.test(location.pathname)) {
       setDisabled(true);
     } else {
       setDisabled(false);
