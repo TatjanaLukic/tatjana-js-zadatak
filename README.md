@@ -1,6 +1,6 @@
 # Top news app
 
-Application for displaying the leatest top news
+Application for displaying the latest top news
 
 ## Table of Contents
 
