@@ -61,7 +61,7 @@ To start storybook use following command:
 
 On the official site are more details how else storybook can be started. Please check: https://storybook.js.org/
 
-## Visual regression testing with Storybook
+# Visual regression testing with Storybook
 
 To start visual regression testing you first have to have Storybook running, and then use following command 
 to start visual regression tests only:
