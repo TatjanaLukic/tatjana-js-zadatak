@@ -21,10 +21,9 @@ If user is intrested in a specific topic application gives option to search all 
 
 App has following sections:
 
- __Top News__ - to preview all latest news for chosen country.
- __Categories__ - for 6 categories top 5 news can be previewed. Categories can be expanded or collapsed. By clicking on 
-             category name it displays all news for given category.
- __Search__ - enables search of news for selected country/
+ __Top News__ - to preview all latest news for chosen country.<br />
+ __Categories__ - for 6 categories (Entertainment, General, Health, Science, Sport, Technology) 5 top news can be previewed. Categories can be expanded or collapsed. By clicking on category name it displays all news for given category.<br />
+ __Search__ - enables search of news for selected country.
 
 It can be used for various size devices as it is __responsive__.
 
@@ -46,11 +45,18 @@ Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [Enzyme](
 
 # Project structure
 
-Each component/page has its own folder with implementation, styling, tests, stories and snapshots.
-Sass varaiables for sizes and colors are in /assets/_variables file.
-In stories folder are image snapshots located in ___image_snapshots___ folder
-Folder ____tests____ have only test for utility functions.
-Mockes are in __mocks__ folder.
+Each component/page has its own folder with implementation, styling, tests, stories and snapshots.<br />
+Sass varaiables for sizes and colors are in __/assets/\_variables__ file.<br />
+In stories folder are image snapshots located in \_\_image_snapshots\_\_ folder.<br />
+Folder \_\_tests\_\_ have only test for utility functions.<br />
+Mockes are in \_\_mocks\_\_folder.<br />
+
+# Starting application
+
+To start application you have to first install necessary node modules with
+### `npm install`
+then run command:
+### `npm start`
 
 # Starting Storybook 
    
@@ -70,18 +76,11 @@ to start visual regression tests only:
 If some of component have changed you will be notifed and can preview differences. If that is wanted change just 
 hit u for update. If not, then you will have to check what needs to be fixed...:)
 
-## Starting application
-
-To start application you have to first install necessary node modules with
-### `npm install`
-then run command:
-### `npm start`
-
 
 ## Create React App
 
-Following are instruction how to build and run application. As well how to start tests and information related implementing
-React app.
+Following are instruction how to build and run application. As well how to start tests and general information and guideline  
+related to implementing React applications.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
