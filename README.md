@@ -31,23 +31,18 @@ It can be used for various size devices as it is __responsive__.
 
 Application is implemented using following technologies:
 
-[React](https://reactjs.org/)
-
-[Sass](https://sass-lang.com/install)
-
-[Context](https://reactjs.org/docs/context.html) as centralized state management
-
-Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [Enzyme](https://enzymejs.github.io/enzyme/)
-
-[Storybook](https://storybook.js.org/)
-
-[Visual regression tests with Storybook](https://storybook.js.org/docs/react/workflows/visual-testing)
+[React](https://reactjs.org/)<br />
+[Sass](https://sass-lang.com/install)<br />
+[Context](https://reactjs.org/docs/context.html) as centralized state management<br />
+Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [Enzyme](https://enzymejs.github.io/enzyme/)<br />
+[Storybook](https://storybook.js.org/)<br />
+[Visual regression tests with Storybook](https://storybook.js.org/docs/react/workflows/visual-testing)<br />
 
 # Project structure
 
 Each component/page has its own folder with implementation, styling, tests, stories and snapshots.<br />
 Sass varaiables for sizes and colors are in __/assets/\_variables__ file.<br />
-In stories folder are image snapshots located in \_\_image_snapshots\_\_ folder.<br />
+__storybook.test.js__ used for visual regression testing - creating images snapshot is in stroies folder, and image snapshots are located in stories/\_\_image_snapshots\_\_ folder.<br />
 Folder \_\_tests\_\_ have only test for utility functions.<br />
 Mockes are in \_\_mocks\_\_folder.<br />
 
