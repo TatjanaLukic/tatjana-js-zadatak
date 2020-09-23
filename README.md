@@ -21,7 +21,7 @@ If user is intrested in a specific topic application gives option to search all 
 
 App has following sections:
 
- __Top News__ - to preview all latest news for chosen country.<br />
+ __Top News__ - to preview all latest news for chosen country: United States or Great Britain.<br />
  __Categories__ - for 6 categories (Entertainment, General, Health, Science, Sport, Technology) 5 top news can be previewed. Categories can be expanded or collapsed. By clicking on category name it displays all news for given category.<br />
  __Search__ - enables search of news for selected country.
 
