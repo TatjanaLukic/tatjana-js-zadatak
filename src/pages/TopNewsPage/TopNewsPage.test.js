@@ -18,15 +18,16 @@ const mockUseContext = jest.fn().mockImplementation(() => ({
 React.useContext = mockUseContext;
 
 describe("<TopNewsPage />", () => {
+  let topNewsPage;
   beforeEach(() => {
-    const topNewsData = shallow(<TopNewsPage />);
+    topNewsPage = shallow(<TopNewsPage />);
   });
 
   it("should have loading", () => {
-    expect(topNewsData.find("Loading")).toHaveLength(1);
+    expect(topNewsPage.find("Loading")).toHaveLength(1);
   });
 
   it("spanshot matches", () => {
-    expect(topNewsData).toMatchSnapshot();
+    expect(topNewsPage).toMatchSnapshot();
   });
 });

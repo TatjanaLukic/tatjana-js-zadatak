@@ -98,11 +98,11 @@ const CategoryBlock = ({ categoryName }) => {
 
       <div className={active ? "category-block--show" : "category-block--hide"}>
         <div className="category-block__slides--wrapper">
-          <div className={currentSlide==(0)?"category-block__nav cb__nav--disable":"category-block__nav"} onClick={onClickLeft}>
+          <div className={currentSlide===(0)?"category-block__nav cb__nav--disable":"category-block__nav"} onClick={onClickLeft}>
             &lt;
           </div>
           <div className="category-block__slides">{newsSlides}</div>
-          <div className={currentSlide==(maxSlides-1)?"category-block__nav cb__nav--disable":"category-block__nav"} onClick={onClickRight}>
+          <div className={currentSlide===(maxSlides-1)?"category-block__nav cb__nav--disable":"category-block__nav"} onClick={onClickRight}>
             &gt;
           </div>
         </div>
