@@ -1,22 +1,23 @@
 # Top news app
 
-Application for displaying top news
+Application for displaying the leatest top news
 
 ## Table of Contents
 
   - [Functionalities](#functionalities)
   - [Technologies used](#technologies-used)
   - [Project structure](#project-structure)
+  - [Starting application](#starting-application)
   - [Starting Storybook ](#starting-storybook )
   - [Visual regression testing with Storybook](#visual-regression-testing-with-storybook)
   - [Create React App](#create-react-app)
 
 # Functionalities
 
-App displays the latest top news from United States and Great Britain. User can read news intro all whole article.
-User can also preview 5 top news from 6 categories (Entertainment, General, Health, Science, Sport, Technology) or
-read all news from chosen category.
-If user is intrested in a specific topic application gives option to search all news by given term.
+App displays the latest top news from United States and Great Britain. User can read news intro or whole content of article.
+User can also preview 5 top news from 6 categories (Entertainment, General, Health, Science, Sport, Technology), as well as
+preview and read all news from chosen category.
+If user is intrested in a specific topic application gives option to search all news from selected country by given term.
 
 App has following pages:
 
@@ -45,10 +46,10 @@ Unit testing with [Jest](https://jestjs.io/docs/en/tutorial-react) and [Enzyme](
 
 # Project structure
 
-Project is structured in a way that each component/page has its own folder with implementation, styling, tests, stories,
-and snapshots.
-In stories folder are image snapshots located in __image_snapshots__ folder
-Folder __tests__ have only test for utility functions.
+Each component/page has its own folder with implementation, styling, tests, stories and snapshots.
+Sass varaiables for sizes and colors are in __/assets/_variables__ file.
+In stories folder are image snapshots located in ___image_snapshots__ folder
+Folder ____tests__ have only test for utility functions.
 Mockes are in __mocks__ folder.
 
 # Starting Storybook 
@@ -57,7 +58,7 @@ To start storybook use following command:
 
 ### `npm test storybook`
 
-On offial site are more details how else storybook can be started. Please check: https://storybook.js.org/
+On the official site are more details how else storybook can be started. Please check: https://storybook.js.org/
 
 ## Visual regression testing with Storybook
 
@@ -68,6 +69,14 @@ to start visual regression tests only:
 
 If some of component have changed you will be notifed and can preview differences. If that is wanted change just 
 hit u for update. If not, then you will have to check what needs to be fixed...:)
+
+## Starting application
+
+To start application you have to first install necessary node modules with
+### `npm install`
+then run command:
+### `npm start`
+
 
 ## Create React App
 
