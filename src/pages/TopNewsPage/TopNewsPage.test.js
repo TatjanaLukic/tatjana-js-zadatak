@@ -1,5 +1,8 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render, screen } from "@testing-library/react";
+import mockAxios from "axios";
+import { MemoryRouter } from "react-router-dom";
+import manyNewsUS from "../../__mocks__/manyNewsUS.json";
 import TopNewsPage from "./TopNewsPage";
 
 jest.mock("react-router-dom", () => ({
@@ -18,16 +21,28 @@ const mockUseContext = jest.fn().mockImplementation(() => ({
 React.useContext = mockUseContext;
 
 describe("<TopNewsPage />", () => {
-  let topNewsPage;
-  beforeEach(() => {
-    topNewsPage = shallow(<TopNewsPage />);
-  });
-
   it("should have loading", () => {
-    expect(topNewsPage.find("Loading")).toHaveLength(1);
+    render(<TopNewsPage />);
+    expect(screen.getByTestId("loading")).toBeInTheDocument();
   });
 
-  it("spanshot matches", () => {
-    expect(topNewsPage).toMatchSnapshot();
+  it("should have title", async () => {
+    mockAxios.get.mockResolvedValueOnce({ data: manyNewsUS });
+    render(<TopNewsPage />, { wrapper: MemoryRouter });
+
+    expect(
+      await screen.findByText("Top news from United States")
+    ).toBeInTheDocument();
+  });
+
+  it("should fetch news and display newsTiles", async () => {
+    mockAxios.get.mockResolvedValueOnce({ data: manyNewsUS });
+
+    render(<TopNewsPage />, { wrapper: MemoryRouter });
+
+    const newsTile = await screen.findAllByTestId("news-tile");
+    expect(newsTile).toHaveLength(20);
+
+    expect(mockAxios.get).toHaveBeenCalled();
   });
 });

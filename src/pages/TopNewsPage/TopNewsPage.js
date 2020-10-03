@@ -30,16 +30,20 @@ const TopNewsPage = () => {
     : `Top news from ${countryName}`;
 
   useEffect(() => {
-    axiosInstance
-      .get(getUrl(country.country, categoryName, 20))
-      .then((response) => {
+    const fetchNews = async () => {
+      try {
+        const response = await axiosInstance.get(
+          getUrl(country.country, categoryName, 20)
+        );
         const data = response.data;
         setNews(data.articles);
-      })
-      .catch((error) => console.log(error))
-      .finally(() => {
         setLoading(false);
-      });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchNews();
   }, [country.country, categoryName]);
 
   const newsTiles = news.map((data, inx) => {
