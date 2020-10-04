@@ -5,7 +5,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <ul className="navbar-items">
+    <ul className="navbar-items" data-testid="navbar">
       <li>
         <NavLink
           to="/TopNewsPage"
