@@ -1,28 +1,91 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render, screen } from "@testing-library/react";
 import routeData from "react-router";
+import CountryContext from "../../context/countryContext";
 import CountryFilter from "./CountryFilter";
 
 describe("<CountryFilter />", () => {
   let countryFilter;
 
-  const mockLocation = {
-    pathname: "/TopNewsPage",
-    hash: "",
-    search: "",
-    state: {},
-  };
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
 
-  beforeEach(() => {
+  it("should render 2 CountryFilterItem, us checked by default", async () => {
+    const mockLocation = {
+      pathname: "/TopNewsPage",
+      hash: "",
+      search: "",
+      state: {},
+    };
     jest.spyOn(routeData, "useLocation").mockReturnValue(mockLocation);
-    countryFilter = shallow(<CountryFilter />);
+    render(
+      <CountryContext.Provider
+        value={{ country: "us", selectCountry: () => {} }}
+      >
+        <CountryFilter />
+      </CountryContext.Provider>
+    );
+    const countryFilterItems = await screen.findAllByTestId("cf-item");
+    expect(countryFilterItems).toHaveLength(2);
+    expect(countryFilterItems[0].querySelector("input").value).toBe("us");
+    expect(countryFilterItems[0].querySelector("input")).toHaveAttribute(
+      "checked"
+    );
+    expect(countryFilterItems[0].querySelector("input")).not.toHaveAttribute(
+      "disabled"
+    );
+    expect(countryFilterItems[1].querySelector("input").value).toBe("gb");
+    expect(countryFilterItems[1].querySelector("input")).not.toHaveAttribute(
+      "checked"
+    );
+    expect(countryFilterItems[1].querySelector("input")).not.toHaveAttribute(
+      "disabled"
+    );
   });
 
-  it("should render 2 CountryFilterItem", () => {
-    expect(countryFilter.find("CountryFilterItem")).toHaveLength(2);
+  it("disabaled for any route containing /NewsPage  ", async () => {
+    const mockLocation1 = {
+      pathname: "/NewsPage",
+      hash: "",
+      search: "",
+      state: {},
+    };
+    jest.spyOn(routeData, "useLocation").mockReturnValue(mockLocation1);
+    render(
+      <CountryContext.Provider
+        value={{ country: "us", selectCountry: () => {} }}
+      >
+        <CountryFilter />
+      </CountryContext.Provider>
+    );
+    const countryFilterItems = await screen.findAllByTestId("cf-item");
+    expect(countryFilterItems).toHaveLength(2);
+
+    expect(countryFilterItems[0].querySelector("input")).toHaveAttribute(
+      "disabled"
+    );
+    expect(countryFilterItems[1].querySelector("input")).toHaveAttribute(
+      "disabled"
+    );
   });
 
-  it("spanshot matches", () => {
-    expect(countryFilter).toMatchSnapshot();
+  it("matches snapshoot for active ", async () => {
+    const mockLocation = {
+      pathname: "/TopNewsPage",
+      hash: "",
+      search: "",
+      state: {},
+    };
+    jest.spyOn(routeData, "useLocation").mockReturnValue(mockLocation);
+    const { container } = render(
+      <CountryContext.Provider
+        value={{ country: "us", selectCountry: () => {} }}
+      >
+        <CountryFilter />
+      </CountryContext.Provider>
+    );
+
+    expect(container).toMatchSnapshot();
   });
 });

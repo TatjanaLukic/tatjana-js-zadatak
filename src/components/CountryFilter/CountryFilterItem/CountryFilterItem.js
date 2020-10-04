@@ -14,7 +14,7 @@ const CountryFilterItem = ({
   let classes = checked ? `${className} ${className}--checked` : className;
   classes = disabled ? `${classes} ${className}--disabled` : classes;
   return (
-    <div>
+    <div data-testid="cf-item">
       <input
         type="radio"
         id={id}
