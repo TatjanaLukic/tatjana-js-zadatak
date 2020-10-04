@@ -35,7 +35,7 @@ const Slide = ({
         </Link>
       </h3>
       <img className="slide__image" src={urlToImage} alt="pictureOfNews"></img>
-      <p className="slide__desc">{description}</p>
+      <p className="slide__desc" data-testid="description">{description}</p>
     </div>
   );
 };
