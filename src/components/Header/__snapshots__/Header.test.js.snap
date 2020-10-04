@@ -1,10 +1,154 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Header /> spanshot matches 1`] = `
-<header
-  className="header"
->
-  <Navbar />
-  <CountryFilter />
-</header>
+exports[`<Header /> spanshots matche 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <ul
+      class="navbar-items"
+      data-testid="navbar"
+    >
+      <li>
+        <a
+          class="navbar-item"
+          href="/TopNewsPage"
+        >
+          Top News
+        </a>
+      </li>
+      <li>
+        <a
+          class="navbar-item"
+          href="/CategoriesPage"
+        >
+          Categories
+        </a>
+      </li>
+      <li>
+        <a
+          class="navbar-item"
+          href="/SearchPage"
+        >
+          Search
+        </a>
+      </li>
+    </ul>
+    <div
+      class="country-filter"
+      data-testid="country-filter"
+    >
+      <div
+        data-testid="cf-item"
+      >
+        <input
+          checked=""
+          hidden=""
+          id="us"
+          type="radio"
+          value="us"
+        />
+        <label
+          class="country-filter-item country-filter-item--checked"
+          for="us"
+        >
+          US
+        </label>
+      </div>
+      <div
+        data-testid="cf-item"
+      >
+        <input
+          hidden=""
+          id="gb"
+          type="radio"
+          value="gb"
+        />
+        <label
+          class="country-filter-item"
+          for="gb"
+        >
+          GB
+        </label>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`<Header /> spanshots matche 2`] = `
+<div>
+  <header
+    class="header"
+  >
+    <ul
+      class="navbar-items"
+      data-testid="navbar"
+    >
+      <li>
+        <a
+          class="navbar-item"
+          href="/TopNewsPage"
+        >
+          Top News
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          class="navbar-item navbar-item--checked"
+          href="/CategoriesPage"
+        >
+          Categories
+        </a>
+      </li>
+      <li>
+        <a
+          class="navbar-item"
+          href="/SearchPage"
+        >
+          Search
+        </a>
+      </li>
+    </ul>
+    <div
+      class="country-filter"
+      data-testid="country-filter"
+    >
+      <div
+        data-testid="cf-item"
+      >
+        <input
+          checked=""
+          hidden=""
+          id="us"
+          type="radio"
+          value="us"
+        />
+        <label
+          class="country-filter-item country-filter-item--checked"
+          for="us"
+        >
+          US
+        </label>
+      </div>
+      <div
+        data-testid="cf-item"
+      >
+        <input
+          hidden=""
+          id="gb"
+          type="radio"
+          value="gb"
+        />
+        <label
+          class="country-filter-item"
+          for="gb"
+        >
+          GB
+        </label>
+      </div>
+    </div>
+  </header>
+</div>
 `;

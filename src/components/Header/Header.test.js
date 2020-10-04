@@ -1,25 +1,31 @@
 import React from "react";
-import { shallow } from "enzyme";
-// import CountryFilter from "./CountryFilter";
-// import Navbar from '../Navbar/Navbar';
+import { fireEvent, render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 import Header from "../Header/Header";
 
 describe("<Header />", () => {
-  let header;
+  it("should render Navbar and CountryFilter", () => {
+    render(
+      <MemoryRouter>
+        <Header />
+      </MemoryRouter>
+    );
 
-  beforeEach(() => {
-    header = shallow(<Header />);
+    expect(screen.getByTestId("navbar")).toBeInTheDocument();
+    expect(screen.getByTestId("country-filter")).toBeInTheDocument();
   });
 
-  it("should render 1 Navbar", () => {
-    expect(header.find("Navbar")).toHaveLength(1);
-  });
+  it("spanshots matche", () => {
+    const { container } = render(
+      <MemoryRouter>
+        <Header />
+      </MemoryRouter>
+    );
 
-  it("should render 1 CountryFilter", () => {
-    expect(header.find("Navbar")).toHaveLength(1);
-  });
+    expect(container).toMatchSnapshot();
 
-  it("spanshot matches", () => {
-    expect(header).toMatchSnapshot();
+    fireEvent.click(screen.getByText("Categories"));
+    expect(container).toMatchSnapshot();
+
   });
 });

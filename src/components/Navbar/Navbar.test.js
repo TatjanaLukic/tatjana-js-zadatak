@@ -12,7 +12,7 @@ describe("<Navbar />", () => {
     );
     const links = screen.getAllByRole("link");
     expect(links).toHaveLength(3);
-    screen.debug();
+   
     expect(links[0]).toHaveAttribute("href", "/TopNewsPage");
     expect(links[0].textContent).toBe("Top News");
 
