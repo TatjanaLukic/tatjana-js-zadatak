@@ -15,7 +15,7 @@ const Slide = ({
   parentPath,
 }) => {
   return (
-    <div className={isCurrent ? `slide-show` : `slide-hide`}>
+    <div className={isCurrent ? `slide-show` : `slide-hide`} data-testid="slide">
       <h3 className="slide__title">
         <Link
           className="slide__link"
