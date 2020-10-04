@@ -53,7 +53,7 @@ describe("<SearchPage />", () => {
 
     expect(container).toMatchSnapshot();
 
-    const newsTile = await screen.findAllByTestId("news-tile");
+    await screen.findAllByTestId("news-tile");
 
     expect(container).toMatchSnapshot();
   });

@@ -26,7 +26,7 @@ const NewsTile = ({
           ></img>
         </div>
         <div className="news-tile__desc--wrapp">
-          <div className="news-tile__desc">{description}</div>
+          <div className="news-tile__desc" data-testid="description">{description}</div>
           <Link
             className="news-tile__link"
             to={{
