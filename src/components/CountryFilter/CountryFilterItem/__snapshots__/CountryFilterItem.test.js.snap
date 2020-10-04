@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CountryFilterItem /> matches snapshoot  1`] = `
+<div>
+  <div
+    data-testid="cf-item"
+  >
+    <input
+      hidden=""
+      id="us"
+      type="radio"
+      value="us"
+    />
+    <label
+      class="country-filter-item"
+      for="us"
+    >
+      us
+    </label>
+  </div>
+</div>
+`;
