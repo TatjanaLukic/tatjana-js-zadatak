@@ -15,13 +15,19 @@ const SearchPage = () => {
     country.country === "us" ? "United States" : "Great Britain";
 
   useEffect(() => {
-    axiosInstance
-      .get(`/top-headlines?country=${country.country}&q=${term}`)
-      .then((response) => {
+    const fetchNewsForTerm = async () => {
+      try {
+        const response = await axiosInstance.get(
+          `/top-headlines?country=${country.country}&q=${term}`
+        );
         const data = response.data;
         setNews(data.articles);
-      })
-      .catch((error) => console.log(error));
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchNewsForTerm();
   }, [term, country.country]);
 
   const onChangeHandler = (event) => {
