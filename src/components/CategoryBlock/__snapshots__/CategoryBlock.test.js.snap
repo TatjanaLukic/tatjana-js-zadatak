@@ -78,6 +78,7 @@ exports[`<CategoryBlock /> to match spanshots  2`] = `
             />
             <p
               class="slide__desc"
+              data-testid="description"
             >
               Tesla Chef Elon Musk hat vor einer Veranstaltung zur Batterie Technologie die Erwartungen gedämpft und so die Aktienhändler enttäuscht.
             </p>
@@ -103,6 +104,7 @@ exports[`<CategoryBlock /> to match spanshots  2`] = `
             />
             <p
               class="slide__desc"
+              data-testid="description"
             >
               Eigenheimbesitzer kommen am Thema Fotovoltaik kaum noch vorbei   schließlich soll eine Solaranlage nicht nur umweltfreundlich, sondern auch lukrativ sein. Wer sich über Solaranlagen informiert, stößt jedoch schnell auf widersprüchliche Aussagen. Ein Faktenche…
             </p>
@@ -128,6 +130,7 @@ exports[`<CategoryBlock /> to match spanshots  2`] = `
             />
             <p
               class="slide__desc"
+              data-testid="description"
             >
               Zwei der drei Wasserstoffflieger, die Airbus präsentiert, unterscheiden sich auf den ersten Blick nicht sehr von heutigen Flugzeugen. Ein wichtiges Detail ist jedoch anders.
             </p>
@@ -153,6 +156,7 @@ exports[`<CategoryBlock /> to match spanshots  2`] = `
             />
             <p
               class="slide__desc"
+              data-testid="description"
             >
               „Die Höhle der Löwen“ Investoren interessieren sich sehr für das Kölner Start up „Forest Gum“. Aber reicht es am Montag für einen Deal?
             </p>
@@ -178,6 +182,7 @@ exports[`<CategoryBlock /> to match spanshots  2`] = `
             />
             <p
               class="slide__desc"
+              data-testid="description"
             >
               Mit Tamtam stampft Tesla in Brandenburg die Fabrik fürs SUV Model Y aus dem Boden. Weniger beachtet: Bei VW rollen die ersten Exemplare des Konkurrenten ID.4 schon vom Band. Muss Elon Musk zittern? Eine Probefahrt.
             </p>
@@ -260,6 +265,7 @@ exports[`<CategoryBlock /> to match spanshots  3`] = `
             />
             <p
               class="slide__desc"
+              data-testid="description"
             >
               Tesla Chef Elon Musk hat vor einer Veranstaltung zur Batterie Technologie die Erwartungen gedämpft und so die Aktienhändler enttäuscht.
             </p>
@@ -285,6 +291,7 @@ exports[`<CategoryBlock /> to match spanshots  3`] = `
             />
             <p
               class="slide__desc"
+              data-testid="description"
             >
               Eigenheimbesitzer kommen am Thema Fotovoltaik kaum noch vorbei   schließlich soll eine Solaranlage nicht nur umweltfreundlich, sondern auch lukrativ sein. Wer sich über Solaranlagen informiert, stößt jedoch schnell auf widersprüchliche Aussagen. Ein Faktenche…
             </p>
@@ -310,6 +317,7 @@ exports[`<CategoryBlock /> to match spanshots  3`] = `
             />
             <p
               class="slide__desc"
+              data-testid="description"
             >
               Zwei der drei Wasserstoffflieger, die Airbus präsentiert, unterscheiden sich auf den ersten Blick nicht sehr von heutigen Flugzeugen. Ein wichtiges Detail ist jedoch anders.
             </p>
@@ -335,6 +343,7 @@ exports[`<CategoryBlock /> to match spanshots  3`] = `
             />
             <p
               class="slide__desc"
+              data-testid="description"
             >
               „Die Höhle der Löwen“ Investoren interessieren sich sehr für das Kölner Start up „Forest Gum“. Aber reicht es am Montag für einen Deal?
             </p>
@@ -360,6 +369,7 @@ exports[`<CategoryBlock /> to match spanshots  3`] = `
             />
             <p
               class="slide__desc"
+              data-testid="description"
             >
               Mit Tamtam stampft Tesla in Brandenburg die Fabrik fürs SUV Model Y aus dem Boden. Weniger beachtet: Bei VW rollen die ersten Exemplare des Konkurrenten ID.4 schon vom Band. Muss Elon Musk zittern? Eine Probefahrt.
             </p>

@@ -4,6 +4,7 @@ exports[`<CountryFilter /> matches snapshoot for active  1`] = `
 <div>
   <div
     class="country-filter"
+    data-testid="country-filter"
   >
     <div
       data-testid="cf-item"
