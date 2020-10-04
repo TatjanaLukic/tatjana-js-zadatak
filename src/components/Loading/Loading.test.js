@@ -1,15 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 import Loading from "../Loading/Loading";
 
 describe("<Loading />", () => {
-  let loading;
-
-  beforeEach(() => {
-    loading = shallow(<Loading />);
-  });
-
   it("spanshot matches", () => {
-    expect(loading).toMatchSnapshot();
+    const { container } = render(<Loading />);
+    expect(container).toMatchSnapshot();
   });
 });

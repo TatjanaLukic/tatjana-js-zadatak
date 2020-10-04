@@ -1,18 +1,20 @@
 import React from "react";
-import { shallow,mount } from "enzyme";
+import { render, screen } from "@testing-library/react";
 import SearchBox from "./SearchBox";
 
 describe("<SearchBox />", () => {
-  let searchBox;
   const fn = () => {};
 
   it("should have input", () => {
-    searchBox = mount(<SearchBox term="Search term" onChangeHandler={fn} />);
-    expect(searchBox.find('input')).toHaveLength(1);
-    searchBox.unmount();
+    render(<SearchBox term="Search term" onChangeHandler={fn} />);
+    expect(screen.getByRole("searchbox")).toBeInTheDocument();
+    expect(screen.getByRole("searchbox")).toHaveAttribute("placeholder","Search term...")
   });
+  
   it("spanshot matches", () => {
-    searchBox = shallow(<SearchBox term="Search term" onChangeHandler={fn} />);
-    expect(searchBox).toMatchSnapshot();
+    const { container } = render(
+      <SearchBox term="Search term" onChangeHandler={fn} />
+    );
+    expect(container).toMatchSnapshot();
   });
 });
