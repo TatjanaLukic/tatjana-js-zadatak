@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<TopNewsPage /> to match loading spanshot  1`] = `
+exports[`<TopNewsPage /> to match spanshots  1`] = `
 <div>
   <div
     class="loading"
@@ -13,7 +13,7 @@ exports[`<TopNewsPage /> to match loading spanshot  1`] = `
 </div>
 `;
 
-exports[`<TopNewsPage /> to match spanshot after fetchNews  1`] = `
+exports[`<TopNewsPage /> to match spanshots  2`] = `
 <div>
   <div
     class="top-news-page"

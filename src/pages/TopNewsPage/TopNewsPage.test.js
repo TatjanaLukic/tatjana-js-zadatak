@@ -93,7 +93,7 @@ describe("<TopNewsPage />", () => {
     expect(newsTile).toHaveLength(20);
   });
 
-  it("to match loading spanshot ", async () => {
+  it("to match spanshots ", async () => {
     mockAxios.get.mockResolvedValueOnce({ data: manyNews });
 
     const { container } = render(
@@ -106,20 +106,7 @@ describe("<TopNewsPage />", () => {
     );
 
     expect(container).toMatchSnapshot();
-  });
-
-  it("to match spanshot after fetchNews ", async () => {
-    mockAxios.get.mockResolvedValueOnce({ data: manyNews });
-
-    const { container } = render(
-      <CountryContext.Provider
-        value={{ country: "us", selectCountry: () => {} }}
-      >
-        <TopNewsPage />
-      </CountryContext.Provider>,
-      { wrapper: MemoryRouter }
-    );
-
+    
     await waitForElementToBeRemoved(() => screen.getByTestId("loading"));
 
     expect(container).toMatchSnapshot();
