@@ -1,22 +1,823 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SearchPage /> spanshot matches 1`] = `
-<div
-  className="search-page"
->
-  <h1
-    className="search-page__title"
-  >
-    Search top news from 
-    United States
-     by term
-  </h1>
-  <SearchBox
-    onChangeHandler={[Function]}
-    term=""
-  />
+exports[`<SearchPage /> snapshot matches 1`] = `
+<div>
   <div
-    className="search-page__tiles"
-  />
+    class="search-page"
+  >
+    <h1
+      class="search-page__title"
+    >
+      Search top news from 
+      United States
+       by term
+    </h1>
+    <input
+      class="searchBox"
+      placeholder="Search term..."
+      type="search"
+      value=""
+    />
+    <div
+      class="search-page__tiles"
+    />
+  </div>
+</div>
+`;
+
+exports[`<SearchPage /> snapshot matches 2`] = `
+<div>
+  <div
+    class="search-page"
+  >
+    <h1
+      class="search-page__title"
+    >
+      Search top news from 
+      United States
+       by term
+    </h1>
+    <input
+      class="searchBox"
+      placeholder="Search term..."
+      type="search"
+      value=""
+    />
+    <div
+      class="search-page__tiles"
+    >
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Emmys 2020: From Watchmen to Zendaya, the full list of winners   CNET
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://cnet2.cbsistatic.com/img/E6TjO7eJ19Jbx0H 3RSG8AAzy10=/1200x630/2020/09/22/baee267f 0f65 4fae ad10 1d4871dff3a5/zendaya euphoria emmy nomination.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              Watchmen wins best limited series, with Regina King, Zendaya and Mark Ruffalo winning big acting awards, and Schitt's Creek sweeping the comedy categories.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Chinese tycoon who criticized Xi Jinping's handling of coronavirus jailed for 18 years   CNN
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://cdn.cnn.com/cnnnext/dam/assets/200408095601 ren zhiqiang super tease.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              A Chinese billionaire who criticized President Xi Jinping's handling of the coronavirus pandemic has been jailed for 18 years on corruption charges, a court said Tuesday.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Lindsey Graham says Trump 'has the votes' to confirm his Supreme Court nominee   Daily Mail
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://i.dailymail.co.uk/1s/2020/09/22/05/33466268 0 image a 29_1600749926139.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              South Carolina Sen Lindsey Graham expressed confidence in Trump's chances of rushing through a Supreme Court nominee on Monday.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Derek Carr leaves his mark on Allegiant Stadium forever with a signature win   Raiders.com
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/raiders/an9m7hwqiwghh5jxjxzi"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              The Las Vegas Raiders quarterback made sure to let everyone know exactly whose stadium this is after sending the Saints home with a loss.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Watch a demo of Royole's new folding phone, on sale today for roughly $1500   The Verge
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://cdn.vox cdn.com/thumbor/SgwLJ50yqvGDOQiPCzqUXYxYPRI=/0x70:1920x1075/fit in/1200x630/cdn.vox cdn.com/uploads/chorus_asset/file/21900889/flexpai_2_render.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              The world’s first commercially available folding screen phone wasn’t made by Samsung, Huawei or Motorola — it was the Royole Flexpai, a device that we called “charmingly awful.” But in March, Royole promised to refine the idea with the new FlexPai 2, and the …
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Bobcat Fire: Fire Burns Through More Than 106K Acres; Flames Again Threaten Mt. Wilson   LAist
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://laistassets.scprdev.org/i/9320163e4322186bfed7ee52367109ca/5f697b1dedff0a0008ef3d30 eight.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              The fire is now one of the largest wildfires in Los Angeles County history.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Xbox/Bethesda Deal: What It Means For PS5   IGN Daily Fix   IGN
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            />
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Evolution of radio resistance is more complicated than previously thought   Phys.org
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://scx2.b cdn.net/gfx/news/hires/2020/evolutionofr.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              The toughest organisms on Earth, called extremophiles, can survive extreme conditions like extreme dryness (desiccation), extreme cold, space vacuum, acid, or even high level radiation. So far, the toughest of all seems to be the bacterium Deinococcus radiodu…
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Asian stock markets continue the global fallout   BBC News
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/181A/production/_114507160_asx.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              Australian shares were among the hardest hit in the region falling to a three month low.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            iOS 14   10 Widget Apps You Should Try!   9to5Mac
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            />
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Michael Jordan and Denny Hamlin team up to start NASCAR team, with Bubba Wallace as a driver   CNN
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://cdn.cnn.com/cnnnext/dam/assets/200921213452 jordan hamlin wallace split restricted super tease.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              Jordan becomes the first Black majority owner of a full time race team in NASCAR's premier series in 60 years.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Bodycam footage shows Utah police shooting teen after mom called 911 to have him hospitalized   NBC News
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://media2.s nbcnews.com/j/newscms/2020_39/3413856/200921 salt lake city police body cam snip ac 1001p_8a4ed05cd101fcae9fa98479d43ef7b8.nbcnews fp 1200 630.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              Authorities in Salt Lake City released body camera footage Monday that shows an officer shooting a 13 year old boy after his mother called 911 because the teen was acting out and needed help.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Avril Lavigne Lines Up Lyme Disease Livestream Benefit Show   Rolling Stone
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://www.rollingstone.com/wp content/uploads/2020/09/AP_19306514883282.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              Singer's site describes virtual event as "only chance" to see her perform in 2020
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Sylvester Stallone's Mother, Jackie Stallone, Dead at 98   TMZ
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://imagez.tmz.com/image/c5/16by9/2020/09/22/c56b017785c748298af867ad7cbc286c_xl.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              Jackie Stallone has passed away at the age of 98.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Judge on Trump's SCOTUS list volunteered for the 1987 Biden presidential campaign   CNN
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://cdn.cnn.com/cnnnext/dam/assets/200921205844 judge joan larsen super tease.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              Joan Larsen, one of the candidates on President Donald Trump's list of potential nominees for the Supreme Court, once volunteered for Joe Biden's 1987 presidential campaign.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Are Microsoft and Sony offering enough for you to buy a next gen console this year?   The Verge
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://cdn.vox cdn.com/thumbor/4mjTv4b y2GFub0Q4oW5Ko8uAXM=/0x162:2040x1230/fit in/1200x630/cdn.vox cdn.com/uploads/chorus_asset/file/21865121/twarren_200908_4177_0008.0.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              After months of waiting, we finally know the launch details for the Xbox Series X and S and the PlayStation 5. But are Microsoft and Sony offering enough to convince you to buy into the next generation at launch? The Verge staff weighs in.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            The One Where Gabrielle Union Hosts an All Black Table Reading of Friends   Vulture
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://pyxis.nymag.com/v1/imgs/998/e59/e4df6c7edc4e2fd71e059b961fd86945bc 21 Gabrielle Union.1x.rsocial.w1200.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              With Sterling K. Brown and Ryan Bathe taking on the roles of Ross and Rachel.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Trump: ‘I’m so angry at Republicans’   POLITICO
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://static.politico.com/ca/00/b33a8de44c439fcd7d83230aad5f/20200921 donaldtrump ap 773.jpg"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              The president says his fellow Republicans have let him it down when it comes to investigating Obama and the Bidens.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            CDC walks back guidance on aerosol spread of coronavirus   CBS News
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            />
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news-tile--wrapper"
+        data-testid="news-tile"
+      >
+        <div
+          class="news-tile"
+        >
+          <h5
+            class="news-tile__title"
+          >
+            Justice Department expected to brief state attorneys general this week on imminent Google antitrust lawsuit   The Washington Post
+          </h5>
+          <div
+            class="news-tile__img--wrapp"
+          >
+            <img
+              alt="pictureOfNews"
+              class="news-tile__img"
+              src="https://www.washingtonpost.com/wp apps/imrs.php?src=https://arc anglerfish washpost prod washpost.s3.amazonaws.com/public/MZWRIIXXHII6VBPXLFARRCUYZU.jpg&w=1440"
+            />
+          </div>
+          <div
+            class="news-tile__desc--wrapp"
+          >
+            <div
+              class="news-tile__desc"
+              data-testid="description"
+            >
+              The Justice Department is expected to brief state attorneys general this week about its imminent plans to file an antitrust lawsuit against Google, setting in motion a landmark legal clash between the U.S. government and the search and advertising behemoth.
+            </div>
+            <a
+              class="news-tile__link"
+              href="/SearchPage/NewsPage"
+            >
+              More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

@@ -21,13 +21,21 @@ const CategoryBlock = ({ categoryName }) => {
   const maxSlides = 5;
 
   useEffect(() => {
-    axiosInstance
-      .get(getUrl(country.country, categoryName, maxSlides))
-      .then((response) => setNews(response.data.articles))
-      .catch((error) => console.log(error))
-      .finally(() => {
+    const fetchCategoryNews = async () => {
+      try {
+        const response = await axiosInstance.get(
+          getUrl(country.country, categoryName, maxSlides)
+        );
+
+        const data = response.data;
+        setNews(data.articles);
         setLoading(false);
-      });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchCategoryNews();
   }, [country.country, categoryName]);
 
   const onClickRight = () => {
@@ -67,7 +75,7 @@ const CategoryBlock = ({ categoryName }) => {
   }
 
   return (
-    <div className="category-block">
+    <div className="category-block" data-testid="categoryBlock">
       <Link
         className="category-block__link"
         to={{
@@ -83,6 +91,7 @@ const CategoryBlock = ({ categoryName }) => {
           active ? "category-block__icon--show" : "category-block__icon--hide"
         }
         onClick={toggleCategory}
+        data-testid="collapse"
       >
         <IconCollapse />
       </span>
@@ -92,17 +101,34 @@ const CategoryBlock = ({ categoryName }) => {
           active ? "category-block__icon--hide" : "category-block__icon--show"
         }
         onClick={toggleCategory}
+        data-testid="expand"
       >
         <IconExpand />
       </span>
 
-      <div className={active ? "category-block--show" : "category-block--hide"}>
+      <div className={active ? "category-block--show" : "category-block--hide"} data-testid="slider">
         <div className="category-block__slides--wrapper">
-          <div className={currentSlide===(0)?"category-block__nav cb__nav--disable":"category-block__nav"} onClick={onClickLeft}>
+          <div
+            className={
+              currentSlide === 0
+                ? "category-block__nav cb__nav--disable"
+                : "category-block__nav"
+            }
+            data-testid="nav-left"
+            onClick={onClickLeft}
+          >
             &lt;
           </div>
           <div className="category-block__slides">{newsSlides}</div>
-          <div className={currentSlide===(maxSlides-1)?"category-block__nav cb__nav--disable":"category-block__nav"} onClick={onClickRight}>
+          <div
+            className={
+              currentSlide === maxSlides - 1
+                ? "category-block__nav cb__nav--disable"
+                : "category-block__nav"
+            }
+            data-testid="nav-right"
+            onClick={onClickRight}
+          >
             &gt;
           </div>
         </div>

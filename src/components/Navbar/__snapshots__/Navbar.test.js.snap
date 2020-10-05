@@ -1,35 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Navbar /> spanshot matches 1`] = `
-<ul
-  className="navbar-items"
->
-  <li>
-    <NavLink
-      activeClassName="navbar-item--checked"
-      className="navbar-item"
-      to="/TopNewsPage"
-    >
-      Top News
-    </NavLink>
-  </li>
-  <li>
-    <NavLink
-      activeClassName="navbar-item--checked"
-      className="navbar-item"
-      to="/CategoriesPage"
-    >
-      Categories
-    </NavLink>
-  </li>
-  <li>
-    <NavLink
-      activeClassName="navbar-item--checked"
-      className="navbar-item"
-      to="/SearchPage"
-    >
-      Search
-    </NavLink>
-  </li>
-</ul>
+exports[`<Navbar /> spanshots matche 1`] = `
+<div>
+  <ul
+    class="navbar-items"
+    data-testid="navbar"
+  >
+    <li>
+      <a
+        class="navbar-item"
+        href="/TopNewsPage"
+      >
+        Top News
+      </a>
+    </li>
+    <li>
+      <a
+        class="navbar-item"
+        href="/CategoriesPage"
+      >
+        Categories
+      </a>
+    </li>
+    <li>
+      <a
+        class="navbar-item"
+        href="/SearchPage"
+      >
+        Search
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<Navbar /> spanshots matche 2`] = `
+<div>
+  <ul
+    class="navbar-items"
+    data-testid="navbar"
+  >
+    <li>
+      <a
+        aria-current="page"
+        class="navbar-item navbar-item--checked"
+        href="/TopNewsPage"
+      >
+        Top News
+      </a>
+    </li>
+    <li>
+      <a
+        class="navbar-item"
+        href="/CategoriesPage"
+      >
+        Categories
+      </a>
+    </li>
+    <li>
+      <a
+        class="navbar-item"
+        href="/SearchPage"
+      >
+        Search
+      </a>
+    </li>
+  </ul>
+</div>
 `;

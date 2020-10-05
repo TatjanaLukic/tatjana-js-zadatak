@@ -1,24 +1,55 @@
 import React from "react";
-import { shallow } from "enzyme";
+import {
+  render,
+  screen,
+  waitForElementToBeRemoved,
+} from "@testing-library/react";
+import mockAxios from "axios";
+import { MemoryRouter } from "react-router-dom";
+import CountryContext from "../../context/countryContext";
+import categoryNews from "../../__mocks__/categoryNews.json";
 import CategoriesPage from "./CategoriesPage";
 
 describe("<CategoriesPage />", () => {
-  let categoriesPage;
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+  it("should have h1", async () => {
+    mockAxios.get.mockResolvedValue({ data: categoryNews });
+    render(
+      <CountryContext.Provider
+        value={{ country: "us", selectCountry: () => {} }}
+      >
+        <CategoriesPage />
+      </CountryContext.Provider>,
+      { wrapper: MemoryRouter }
+    );
+    expect(
+      screen.getByRole("heading", {
+        name: "Top 5 news by categories from United States",
+      })
+    ).toBeInTheDocument();
+    expect(screen.getAllByTestId("loading")).toHaveLength(6);
 
-  beforeEach(() => {
-    categoriesPage = shallow(<CategoriesPage />);
+    await waitForElementToBeRemoved(() => screen.getAllByTestId("loading"));
+
+    expect(screen.getAllByTestId("categoryBlock")).toHaveLength(6);
   });
 
-  it("should have h1", () => {
-    expect(categoriesPage.find("h1")).toHaveLength(1);
-  });
-  it("should have title=Top 5 news by categories from United States", () => {
-    expect(categoriesPage.find("h1").text()).toEqual("Top 5 news by categories from United States")
-  });
-  it("should have 5 CategoryBlock", () => {
-    expect(categoriesPage.find("CategoryBlock")).toHaveLength(6);
-  });
-  it("spanshot matches", () => {
-    expect(categoriesPage).toMatchSnapshot();
+  it("spanshot matches", async () => {
+    mockAxios.get.mockResolvedValue({ data: categoryNews });
+    const { container } = render(
+      <CountryContext.Provider
+        value={{ country: "us", selectCountry: () => {} }}
+      >
+        <CategoriesPage />
+      </CountryContext.Provider>,
+      { wrapper: MemoryRouter }
+    );
+    expect(container).toMatchSnapshot();
+
+    await waitForElementToBeRemoved(() => screen.getAllByTestId("loading"));
+
+    expect(container).toMatchSnapshot();
   });
 });

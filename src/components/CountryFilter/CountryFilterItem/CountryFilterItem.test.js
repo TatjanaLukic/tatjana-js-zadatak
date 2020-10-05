@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render, screen } from "@testing-library/react";
 import CountryFilterItem from "./CountryFilterItem";
 
 describe("<CountryFilterItem />", () => {
@@ -14,11 +14,26 @@ describe("<CountryFilterItem />", () => {
     className: "country-filter-item",
   };
 
-  beforeEach(() => {
-    countryFilterItem = shallow(<CountryFilterItem {...data} />);
+  it("should render radio with hidden input and visible label", () => {
+    render(<CountryFilterItem {...data} />);
+    const countryFilterItem = screen.getByTestId("cf-item");
+
+    expect(
+      countryFilterItem.querySelector("input[type=radio]")
+    ).toBeInTheDocument();
+    expect(
+      countryFilterItem.querySelector("input[type=radio]")
+    ).toHaveAttribute("hidden");
+
+    expect(countryFilterItem.querySelector("label")).toBeInTheDocument();
+    expect(countryFilterItem.querySelector("label").textContent).toBe("us");
+    expect(countryFilterItem.querySelector("label")).not.toHaveAttribute(
+      "hidden"
+    );
   });
 
-  it("should render label", () => {
-    expect(countryFilterItem.find("label")).toHaveLength(1);
+  it("matches snapshoot ", async () => {
+    const { container } = render(<CountryFilterItem {...data} />);
+    expect(container).toMatchSnapshot();
   });
 });

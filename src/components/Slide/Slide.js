@@ -15,7 +15,7 @@ const Slide = ({
   parentPath,
 }) => {
   return (
-    <div className={isCurrent ? `slide-show` : `slide-hide`}>
+    <div className={isCurrent ? `slide-show` : `slide-hide`} data-testid="slide">
       <h3 className="slide__title">
         <Link
           className="slide__link"
@@ -35,7 +35,7 @@ const Slide = ({
         </Link>
       </h3>
       <img className="slide__image" src={urlToImage} alt="pictureOfNews"></img>
-      <p className="slide__desc">{description}</p>
+      <p className="slide__desc" data-testid="description">{description}</p>
     </div>
   );
 };

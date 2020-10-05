@@ -26,7 +26,7 @@ const CountryFilter = () => {
   };
 
   return (
-    <div className="country-filter">
+    <div className="country-filter" data-testid="country-filter">
       <CountryFilterItem
         id="us"
         value="us"

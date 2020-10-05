@@ -15,7 +15,7 @@ const NewsTile = ({
   categoryName,
 }) => {
   return (
-    <div className="news-tile--wrapper">
+    <div className="news-tile--wrapper" data-testid="news-tile">
       <div className="news-tile">
         <h5 className="news-tile__title">{title}</h5>
         <div className="news-tile__img--wrapp">
@@ -26,7 +26,7 @@ const NewsTile = ({
           ></img>
         </div>
         <div className="news-tile__desc--wrapp">
-          <div className="news-tile__desc">{description}</div>
+          <div className="news-tile__desc" data-testid="description">{description}</div>
           <Link
             className="news-tile__link"
             to={{

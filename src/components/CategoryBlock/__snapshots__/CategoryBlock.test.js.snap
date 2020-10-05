@@ -1,3 +1,388 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CategoryBlock /> spanshot matches 1`] = `<Loading />`;
+exports[`<CategoryBlock /> to match spanshots  1`] = `
+<div>
+  <div
+    class="loading"
+    data-testid="loading"
+  >
+    <svg>
+      circles.svg
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`<CategoryBlock /> to match spanshots  2`] = `
+<div>
+  <div
+    class="category-block"
+    data-testid="categoryBlock"
+  >
+    <a
+      class="category-block__link"
+      href="/CategoriesPage/TopNewsPage"
+    >
+      business
+    </a>
+    <span
+      class="category-block__icon--show"
+      data-testid="collapse"
+    >
+      <svg>
+        collapse.svg
+      </svg>
+    </span>
+    <span
+      class="category-block__icon--hide"
+      data-testid="expand"
+    >
+      <svg>
+        expand.svg
+      </svg>
+    </span>
+    <div
+      class="category-block--show"
+      data-testid="slider"
+    >
+      <div
+        class="category-block__slides--wrapper"
+      >
+        <div
+          class="category-block__nav cb__nav--disable"
+          data-testid="nav-left"
+        >
+          &lt;
+        </div>
+        <div
+          class="category-block__slides"
+        >
+          <div
+            class="slide-show"
+            data-testid="slide"
+          >
+            <h3
+              class="slide__title"
+            >
+              <a
+                class="slide__link"
+                href="/CategoriesPage/NewsPage"
+              >
+                Tesla Aktie schmiert ab   Kein Saft am Batterie Tag   BILD
+              </a>
+            </h3>
+            <img
+              alt="pictureOfNews"
+              class="slide__image"
+              src="https://bilder.bild.de/fotos/tesla aktie schmiert ab kein saft am batterie tag 201524804 73032638/Bild/3.bild.jpg"
+            />
+            <p
+              class="slide__desc"
+              data-testid="description"
+            >
+              Tesla Chef Elon Musk hat vor einer Veranstaltung zur Batterie Technologie die Erwartungen gedämpft und so die Aktienhändler enttäuscht.
+            </p>
+          </div>
+          <div
+            class="slide-hide"
+            data-testid="slide"
+          >
+            <h3
+              class="slide__title"
+            >
+              <a
+                class="slide__link"
+                href="/CategoriesPage/NewsPage"
+              >
+                Strom selber machen? :Die fünf größten Irrtümer bei Solaranlagen   n tv NACHRICHTEN
+              </a>
+            </h3>
+            <img
+              alt="pictureOfNews"
+              class="slide__image"
+              src="https://bilder3.n tv.de/img/incoming/crop14785186/9961323629 cImg_16_9 w1200/imago61527841h.jpg"
+            />
+            <p
+              class="slide__desc"
+              data-testid="description"
+            >
+              Eigenheimbesitzer kommen am Thema Fotovoltaik kaum noch vorbei   schließlich soll eine Solaranlage nicht nur umweltfreundlich, sondern auch lukrativ sein. Wer sich über Solaranlagen informiert, stößt jedoch schnell auf widersprüchliche Aussagen. Ein Faktenche…
+            </p>
+          </div>
+          <div
+            class="slide-hide"
+            data-testid="slide"
+          >
+            <h3
+              class="slide__title"
+            >
+              <a
+                class="slide__link"
+                href="/CategoriesPage/NewsPage"
+              >
+                Warum Airbus' Wasserstoffflieger hinten keine Fenster haben   aeroTELEGRAPH
+              </a>
+            </h3>
+            <img
+              alt="pictureOfNews"
+              class="slide__image"
+              src="https://cdn.aerotelegraph.com/production/uploads/2020/09/airbus_zero_e.jpg"
+            />
+            <p
+              class="slide__desc"
+              data-testid="description"
+            >
+              Zwei der drei Wasserstoffflieger, die Airbus präsentiert, unterscheiden sich auf den ersten Blick nicht sehr von heutigen Flugzeugen. Ein wichtiges Detail ist jedoch anders.
+            </p>
+          </div>
+          <div
+            class="slide-hide"
+            data-testid="slide"
+          >
+            <h3
+              class="slide__title"
+            >
+              <a
+                class="slide__link"
+                href="/CategoriesPage/NewsPage"
+              >
+                Höhle der Löwen: Kölner Gründer klärt auf, Investoren geschockt   EXPRESS
+              </a>
+            </h3>
+            <img
+              alt="pictureOfNews"
+              class="slide__image"
+              src="https://www.express.de/image/37378240/2x1/940/470/a89bb94d2ab24631545ad42855d9b08f/NT/forest gum thomas kraemer.jpg"
+            />
+            <p
+              class="slide__desc"
+              data-testid="description"
+            >
+              „Die Höhle der Löwen“ Investoren interessieren sich sehr für das Kölner Start up „Forest Gum“. Aber reicht es am Montag für einen Deal?
+            </p>
+          </div>
+          <div
+            class="slide-hide"
+            data-testid="slide"
+          >
+            <h3
+              class="slide__title"
+            >
+              <a
+                class="slide__link"
+                href="/CategoriesPage/NewsPage"
+              >
+                Erste Fahrt im VW ID.4: Als Volkswagen einmal schneller als Tesla war   DER SPIEGEL
+              </a>
+            </h3>
+            <img
+              alt="pictureOfNews"
+              class="slide__image"
+              src="https://cdn.prod.www.spiegel.de/images/1c62a093 2f1a 41de a462 781e87c69868_w1280_r1.77_fpx33.34_fpy50.jpg"
+            />
+            <p
+              class="slide__desc"
+              data-testid="description"
+            >
+              Mit Tamtam stampft Tesla in Brandenburg die Fabrik fürs SUV Model Y aus dem Boden. Weniger beachtet: Bei VW rollen die ersten Exemplare des Konkurrenten ID.4 schon vom Band. Muss Elon Musk zittern? Eine Probefahrt.
+            </p>
+          </div>
+        </div>
+        <div
+          class="category-block__nav"
+          data-testid="nav-right"
+        >
+          &gt;
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<CategoryBlock /> to match spanshots  3`] = `
+<div>
+  <div
+    class="category-block"
+    data-testid="categoryBlock"
+  >
+    <a
+      class="category-block__link"
+      href="/CategoriesPage/TopNewsPage"
+    >
+      business
+    </a>
+    <span
+      class="category-block__icon--hide"
+      data-testid="collapse"
+    >
+      <svg>
+        collapse.svg
+      </svg>
+    </span>
+    <span
+      class="category-block__icon--show"
+      data-testid="expand"
+    >
+      <svg>
+        expand.svg
+      </svg>
+    </span>
+    <div
+      class="category-block--hide"
+      data-testid="slider"
+    >
+      <div
+        class="category-block__slides--wrapper"
+      >
+        <div
+          class="category-block__nav cb__nav--disable"
+          data-testid="nav-left"
+        >
+          &lt;
+        </div>
+        <div
+          class="category-block__slides"
+        >
+          <div
+            class="slide-show"
+            data-testid="slide"
+          >
+            <h3
+              class="slide__title"
+            >
+              <a
+                class="slide__link"
+                href="/CategoriesPage/NewsPage"
+              >
+                Tesla Aktie schmiert ab   Kein Saft am Batterie Tag   BILD
+              </a>
+            </h3>
+            <img
+              alt="pictureOfNews"
+              class="slide__image"
+              src="https://bilder.bild.de/fotos/tesla aktie schmiert ab kein saft am batterie tag 201524804 73032638/Bild/3.bild.jpg"
+            />
+            <p
+              class="slide__desc"
+              data-testid="description"
+            >
+              Tesla Chef Elon Musk hat vor einer Veranstaltung zur Batterie Technologie die Erwartungen gedämpft und so die Aktienhändler enttäuscht.
+            </p>
+          </div>
+          <div
+            class="slide-hide"
+            data-testid="slide"
+          >
+            <h3
+              class="slide__title"
+            >
+              <a
+                class="slide__link"
+                href="/CategoriesPage/NewsPage"
+              >
+                Strom selber machen? :Die fünf größten Irrtümer bei Solaranlagen   n tv NACHRICHTEN
+              </a>
+            </h3>
+            <img
+              alt="pictureOfNews"
+              class="slide__image"
+              src="https://bilder3.n tv.de/img/incoming/crop14785186/9961323629 cImg_16_9 w1200/imago61527841h.jpg"
+            />
+            <p
+              class="slide__desc"
+              data-testid="description"
+            >
+              Eigenheimbesitzer kommen am Thema Fotovoltaik kaum noch vorbei   schließlich soll eine Solaranlage nicht nur umweltfreundlich, sondern auch lukrativ sein. Wer sich über Solaranlagen informiert, stößt jedoch schnell auf widersprüchliche Aussagen. Ein Faktenche…
+            </p>
+          </div>
+          <div
+            class="slide-hide"
+            data-testid="slide"
+          >
+            <h3
+              class="slide__title"
+            >
+              <a
+                class="slide__link"
+                href="/CategoriesPage/NewsPage"
+              >
+                Warum Airbus' Wasserstoffflieger hinten keine Fenster haben   aeroTELEGRAPH
+              </a>
+            </h3>
+            <img
+              alt="pictureOfNews"
+              class="slide__image"
+              src="https://cdn.aerotelegraph.com/production/uploads/2020/09/airbus_zero_e.jpg"
+            />
+            <p
+              class="slide__desc"
+              data-testid="description"
+            >
+              Zwei der drei Wasserstoffflieger, die Airbus präsentiert, unterscheiden sich auf den ersten Blick nicht sehr von heutigen Flugzeugen. Ein wichtiges Detail ist jedoch anders.
+            </p>
+          </div>
+          <div
+            class="slide-hide"
+            data-testid="slide"
+          >
+            <h3
+              class="slide__title"
+            >
+              <a
+                class="slide__link"
+                href="/CategoriesPage/NewsPage"
+              >
+                Höhle der Löwen: Kölner Gründer klärt auf, Investoren geschockt   EXPRESS
+              </a>
+            </h3>
+            <img
+              alt="pictureOfNews"
+              class="slide__image"
+              src="https://www.express.de/image/37378240/2x1/940/470/a89bb94d2ab24631545ad42855d9b08f/NT/forest gum thomas kraemer.jpg"
+            />
+            <p
+              class="slide__desc"
+              data-testid="description"
+            >
+              „Die Höhle der Löwen“ Investoren interessieren sich sehr für das Kölner Start up „Forest Gum“. Aber reicht es am Montag für einen Deal?
+            </p>
+          </div>
+          <div
+            class="slide-hide"
+            data-testid="slide"
+          >
+            <h3
+              class="slide__title"
+            >
+              <a
+                class="slide__link"
+                href="/CategoriesPage/NewsPage"
+              >
+                Erste Fahrt im VW ID.4: Als Volkswagen einmal schneller als Tesla war   DER SPIEGEL
+              </a>
+            </h3>
+            <img
+              alt="pictureOfNews"
+              class="slide__image"
+              src="https://cdn.prod.www.spiegel.de/images/1c62a093 2f1a 41de a462 781e87c69868_w1280_r1.77_fpx33.34_fpy50.jpg"
+            />
+            <p
+              class="slide__desc"
+              data-testid="description"
+            >
+              Mit Tamtam stampft Tesla in Brandenburg die Fabrik fürs SUV Model Y aus dem Boden. Weniger beachtet: Bei VW rollen die ersten Exemplare des Konkurrenten ID.4 schon vom Band. Muss Elon Musk zittern? Eine Probefahrt.
+            </p>
+          </div>
+        </div>
+        <div
+          class="category-block__nav"
+          data-testid="nav-right"
+        >
+          &gt;
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

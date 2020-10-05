@@ -1,9 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Loading /> spanshot matches 1`] = `
-<div
-  className="loading"
->
-  <ForwardRef(SvgCircles) />
+<div>
+  <div
+    class="loading"
+    data-testid="loading"
+  >
+    <svg>
+      circles.svg
+    </svg>
+  </div>
 </div>
 `;

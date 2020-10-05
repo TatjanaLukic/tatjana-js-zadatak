@@ -1,26 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CountryFilter /> spanshot matches 1`] = `
-<div
-  className="country-filter"
->
-  <CountryFilterItem
-    checked={true}
-    className="country-filter-item"
-    disabled={false}
-    id="us"
-    labelName="US"
-    onChange={[Function]}
-    value="us"
-  />
-  <CountryFilterItem
-    checked={false}
-    className="country-filter-item"
-    disabled={false}
-    id="gb"
-    labelName="GB"
-    onChange={[Function]}
-    value="gb"
-  />
+exports[`<CountryFilter /> matches snapshoot for active  1`] = `
+<div>
+  <div
+    class="country-filter"
+    data-testid="country-filter"
+  >
+    <div
+      data-testid="cf-item"
+    >
+      <input
+        checked=""
+        hidden=""
+        id="us"
+        type="radio"
+        value="us"
+      />
+      <label
+        class="country-filter-item country-filter-item--checked"
+        for="us"
+      >
+        US
+      </label>
+    </div>
+    <div
+      data-testid="cf-item"
+    >
+      <input
+        hidden=""
+        id="gb"
+        type="radio"
+        value="gb"
+      />
+      <label
+        class="country-filter-item"
+        for="gb"
+      >
+        GB
+      </label>
+    </div>
+  </div>
 </div>
 `;

@@ -1,0 +1,70 @@
+{
+    "status": "ok",
+    "totalResults": 5,
+     "articles": [
+     {
+     "source": {
+    "id": "bild",
+    "name": "Bild"
+    },
+    "author": "Bild.de",
+    "title": "Tesla Aktie schmiert ab   Kein Saft am Batterie Tag   BILD",
+    "description": "Tesla Chef Elon Musk hat vor einer Veranstaltung zur Batterie Technologie die Erwartungen gedämpft und so die Aktienhändler enttäuscht.",
+    "url": "https://www.bild.de/geld/wirtschaft/wirtschaft/tesla aktie schmiert ab kein saft am batterie tag 73031786.bild.html",
+    "urlToImage": "https://bilder.bild.de/fotos/tesla aktie schmiert ab kein saft am batterie tag 201524804 73032638/Bild/3.bild.jpg",
+    "publishedAt": "2020 09 22T06:04:00Z",
+    "content": "Stell dir vor, es ist Batterie Tag   aber es gibt nicht genug Batterien.\r\nTesla Chef Elon Musk (49) hat vor einer Veranstaltung zur Batterie Technologie die Erwartungen gedämpft und damit die Aktienh… [+1496 chars]"
+    },
+     {
+     "source": {
+    "id": null,
+    "name": "N tv.de"
+    },
+    "author": "n tv NACHRICHTEN",
+    "title": "Strom selber machen? :Die fünf größten Irrtümer bei Solaranlagen   n tv NACHRICHTEN",
+    "description": "Eigenheimbesitzer kommen am Thema Fotovoltaik kaum noch vorbei   schließlich soll eine Solaranlage nicht nur umweltfreundlich, sondern auch lukrativ sein. Wer sich über Solaranlagen informiert, stößt jedoch schnell auf widersprüchliche Aussagen. Ein Faktenche…",
+    "url": "https://www.n tv.de/ratgeber/Die fuenf groessten Irrtuemer bei Solaranlagen article22040579.html",
+    "urlToImage": "https://bilder3.n tv.de/img/incoming/crop14785186/9961323629 cImg_16_9 w1200/imago61527841h.jpg",
+    "publishedAt": "2020 09 22T05:03:57Z",
+    "content": "Eigenheimbesitzer kommen am Thema Fotovoltaik kaum noch vorbei   schließlich soll eine Solaranlage nicht nur umweltfreundlich, sondern auch lukrativ sein. Wer sich über Solaranlagen informiert, stößt… [+5128 chars]"
+    },
+     {
+     "source": {
+    "id": null,
+    "name": "Aerotelegraph.com"
+    },
+    "author": null,
+    "title": "Warum Airbus' Wasserstoffflieger hinten keine Fenster haben   aeroTELEGRAPH",
+    "description": "Zwei der drei Wasserstoffflieger, die Airbus präsentiert, unterscheiden sich auf den ersten Blick nicht sehr von heutigen Flugzeugen. Ein wichtiges Detail ist jedoch anders.",
+    "url": "https://www.aerotelegraph.com/wasserstoffflieger warum airbus neue flieger hinten keine fenster haben",
+    "urlToImage": "https://cdn.aerotelegraph.com/production/uploads/2020/09/airbus_zero_e.jpg",
+    "publishedAt": "2020 09 22T04:55:00Z",
+    "content": null
+    },
+     {
+     "source": {
+    "id": null,
+    "name": "Express.de"
+    },
+    "author": null,
+    "title": "Höhle der Löwen: Kölner Gründer klärt auf, Investoren geschockt   EXPRESS",
+    "description": "„Die Höhle der Löwen“ Investoren interessieren sich sehr für das Kölner Start up „Forest Gum“. Aber reicht es am Montag für einen Deal?",
+    "url": "https://www.express.de/news/promi und show/dhdl  loewen  buhlen um  forest gum   gruender schockt mit infos zu beliebtem produkt 37377432",
+    "urlToImage": "https://www.express.de/image/37378240/2x1/940/470/a89bb94d2ab24631545ad42855d9b08f/NT/forest gum thomas kraemer.jpg",
+    "publishedAt": "2020 09 22T03:17:00Z",
+    "content": "Köln  \r\nEin kleines Unternehmen aus Köln hat Großes vor: Wir möchten den Kaugummi Markt revolutionieren, sagt Thomas Krämer. Dazu wagt sich der Gründer von Forest Gum am Montagabend (Folge vier) in D… [+5070 chars]"
+    },
+     {
+     "source": {
+    "id": "spiegel online",
+    "name": "Spiegel Online"
+    },
+    "author": "Thomas Geiger",
+    "title": "Erste Fahrt im VW ID.4: Als Volkswagen einmal schneller als Tesla war   DER SPIEGEL",
+    "description": "Mit Tamtam stampft Tesla in Brandenburg die Fabrik fürs SUV Model Y aus dem Boden. Weniger beachtet: Bei VW rollen die ersten Exemplare des Konkurrenten ID.4 schon vom Band. Muss Elon Musk zittern? Eine Probefahrt.",
+    "url": "https://www.spiegel.de/auto/fahrberichte/vw id 4 im test kann es der elektro suv von volkswagen mit tesla aufnehmen a f3d41599 9ab1 489e 99aa 4dc93b7f0b85",
+    "urlToImage": "https://cdn.prod.www.spiegel.de/images/1c62a093 2f1a 41de a462 781e87c69868_w1280_r1.77_fpx33.34_fpy50.jpg",
+    "publishedAt": "2020 09 22T02:58:38Z",
+    "content": null
+    } ]
+    }
